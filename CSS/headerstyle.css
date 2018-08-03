@@ -14,7 +14,7 @@ header img {
 	box-sizing: border-box;
 }
 
-header a[href="cover.html"]:hover img{
+header a[class="logo"]:hover img{
 	opacity: 0.7;
 }
 
@@ -62,9 +62,6 @@ header .opt2 button {
 	background-color: orange;
 	border: orange solid 0.5px;
 	border-radius: 2px;
-}
-
-header .opt2 button a {
 	color: white;
 }
 
@@ -72,6 +69,6 @@ header .opt1 a:hover {
 	color: orange;
 }
 
-header .opt2 a:hover {
+header .opt2 a:hover, button:hover {
 	opacity: 0.7;
 }

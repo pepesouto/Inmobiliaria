@@ -3,13 +3,14 @@
    <head>
      <meta charset="utf-8">
      <title>Search Result</title>
-     <link rel="stylesheet" href="css/search-result.css">
-     <link rel="stylesheet" href="css/headerstyle.css">
      <link rel="stylesheet" href="css/reset.css">
+     <link rel="stylesheet" href="css/headerstyle.css">
+     <link rel="stylesheet" href="css/search-result.css">
    </head>
    <body>
+
      <header>
-         <a href="cover.html">
+         <a class="logo" href="cover.html">
            <img src="img/logo.png" alt="Cabildo 500">
          </a>
          <ul class="opt1">
@@ -19,18 +20,19 @@
          </ul>
          <ul class="opt2">
              <li><a href="">Contacto</a></li>
-             <li><button><a href="">Publicar</a></button></li>
+             <li><button href="">Publicar</button></li>
              <li><a href="">Iniciar Sesion</a></li>
          </ul>
      </header>
 
-     <div class="browserbox">
+     <nav class="browserbox">
        <input class="browser" name="browser" type="text" placeholder="e.i New York City"></input>
-     </div>
+     </nav>
 
      <div class="container">
-       <div class="resultsbox">
-         <div class="result">
+       <article class="resultsbox">
+
+         <section class="result">
            <div class="imgbox">
              <img src="img/img.jpg" alt="img1">
            </div>
@@ -39,9 +41,9 @@
              <h2 class="title">Direccion ficticia, 345, Result 1.</h2>
              <p class="text">Luminoso, cantidad de dormitorios, cosas, cosas.</p>
            </div>
-         </div>
+         </section>
 
-         <div class="result">
+         <section class="result">
            <div class="imgbox">
              <img src="img/img.jpg" alt="img1">
            </div>
@@ -50,9 +52,9 @@
              <h2 class="title">Direccion ficticia, 345, Result 1.</h2>
              <p class="text">Luminoso, cantidad de dormitorios, cosas, cosas.</p>
            </div>
-         </div>
+         </section>
 
-         <div class="result">
+         <section class="result">
            <div class="imgbox">
              <img src="img/img.jpg" alt="img1">
            </div>
@@ -61,9 +63,9 @@
              <h2 class="title">Direccion ficticia, 345, Result 1.</h2>
              <p class="text">Luminoso, cantidad de dormitorios, cosas, cosas.</p>
            </div>
-         </div>
+         </section>
 
-         <div class="result">
+         <section class="result">
            <div class="imgbox">
              <img src="img/img.jpg" alt="img1">
            </div>
@@ -72,17 +74,17 @@
              <h2 class="title">Direccion ficticia, 345, Result 1.</h2>
              <p class="text">Luminoso, cantidad de dormitorios, cosas, cosas.</p>
            </div>
-         </div>
+         </section>
 
-       </div>
+       </article>
 
-       <div class="mapbox">
+       <aside class="mapbox">
          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d209626.35836321
           392!2d-56.37652363555179!3d-34.82073615640862!2m3!1f0!2f0!3f0!3m2!1i1024!2
           i768!4f13.1!3m3!1m2!1s0x959f80ffc63bf7d3%3A0x6b321b2e355bec99!2sMontevideo
           %2C+Uruguay!5e0!3m2!1ses!2sus!4v1533150943717"
           frameborder="0" style="border:0" allowfullscreen></iframe>
-       </div>
+       </aside>
      </div>
 
    </body>
