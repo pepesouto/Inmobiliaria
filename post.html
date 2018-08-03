@@ -2,14 +2,15 @@
 <html>
     <header>
         <title> Post Title </title>
-        <link rel="stylesheet" href="CSS/postStyle.css">
+        <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/headerstyle.css"> 
+        <link rel="stylesheet" href="CSS/postStyle.css">
     </header>
 
     <body>
 
-        <header>
-            <a href="cover.html">
+        <header id="header">
+            <a class="logo" href="cover.html">
               <img src="img/logo.png" alt="Cabildo 500">
             </a>
             <ul class="opt1">
@@ -19,34 +20,117 @@
             </ul>
             <ul class="opt2">
                 <li><a href="">Contacto</a></li>
-                <li><button><a href="">Publicar</a></button></li>
+                <li><button href="">Publicar</button></li>
                 <li><a href="">Iniciar Sesion</a></li>
             </ul>
         </header>
 
-        <div class="innerHeader"> 
+        <header class="innerHeader"> 
             <h1>Post Title</h1>
-        </div>
+        </header>
     
-        <nav>
+        <div>
             <div class="location">
 
             </div>
-            <div class="socialMedia">
+            <nav class="socialMedia">
+                <ul>
+                    <li>Compartir en Facebook</li>
+                    <li>Compartir en Twitter</li>
+                    <li>Compartir en Instagram</li>
+                    <li>Enviar por E-mail</li>
 
-            </div>
-        </nav>
+                </ul>
+            </nav>
+        </div>
         
         <div  class="box">
-            <div class="imgbox">
 
-            </div>
-            <div class="contactbox">
+            <section class="imgbox">
+                <img src="img/beach.jpg" alt="img">
+            </section>
 
-            </div>
+            <aside class="contactbox">
+                <h2>Consultar Anunciante</h2>
+                <h4>Cabilo 500</h4>
+                <h2> 099 987 654</h2>
+                <form action="">
+                    <input type="text" placeholder="*Nombre Completo" required/>     
+                    <input type="text" placeholder="*E-mail" required/>     
+                    <input type="text" placeholder="Telefono"/>     
+                    <input type="text" placeholder="*Escribe tu consulta" required/>     
+                    <button> Enviar</button>
+                </form>
+            </aside>
         </div>
 
-        <div class="descriptionbox">
+        <div class="infobox">
+
+            <section class="mainInfo">
+                <ul>
+                    <li>Apartamento</li>
+                    <li>1 Ambiente</li>
+                    <li>1 Bathroom</li>
+                    <li>35m2</li>
+                </ul>
+            </section>
+
+            <section class="datasheet">
+                <div class="subtitlebox">
+                    <h2>Data Sheet</h2>
+                </div>    
+                <div class="column">
+                    <ul>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <ul>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="amenities">
+                <div class="subtitlebox">
+                    <h2>Amenities</h2>
+                </div>    
+                <div class="column">
+                    <ul>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                    </ul>
+                </div>
+                
+                <div class="column">
+                    <ul>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                        <li>Elem</li>
+                    </ul>
+                </div>
+            </section>
+
+            <section class="description">
+                <div class="subtitlebox">
+                    <h2>Description</h2>
+                </div>    
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Dolor dignissimos veritatis soluta, ducimus excepturi incidunt. Ullam distinctio fugit, accusantium nihil voluptate necessitatibus, nam eos consequuntur aut omnis inventore.</p>
+            </section>
 
         </div>
 
