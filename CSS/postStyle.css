@@ -1,0 +1,96 @@
+.innerHeader {
+  widht: 100%;
+  height: 40px;
+  background:  #737373;
+  text-align: center;
+}
+
+.innerHeader h1 {
+  color: white;
+  font-size: 20px;
+  font-family: helvetica tahoma;
+  text-align: center;
+}
+
+.innerHeader2 {
+  width: 100%;
+  height: 40px;
+  padding: 0 3%;
+  background-color: white;
+  box-sizing: border-box;
+}
+
+.innerHeader2 .location {
+  float: left;
+  object-fit: contain;
+}
+
+.innerHeader2 .location h4 {
+  color: #737373;
+  font-size: 20px;
+  font-family: helvetica tahoma;
+  display: inline;
+}
+
+.innerHeader2 .location .locationtext {
+  font-weight: bold;
+}
+
+.innerHeader2 .socialMedia {
+  width: auto;
+  height: inherit;
+  float: right;
+}
+
+.innerHeader2 .socialMedia ul {
+  object-fit: contain;
+}
+
+.innerHeader2 .socialMedia ul li {
+  display: inline-block;
+}
+
+.box {
+  height: 400px;
+  width: 100%;
+  padding: 0 3%;
+  background: #f2f2f2;
+  box-sizing: border-box;
+}
+
+.box .imgbox {
+  width: 50%;
+  float: left;
+  object-fit: contain;
+  border: yellow 2px solid;
+  box-sizing: border-box;
+}
+
+.box .imgbox img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.box .contactbox {
+  width: 35%;
+  margin: 7.5%;
+  float: right;
+  object-fit: contain;
+  box-sizing: border-box;
+  border: red 2px solid;
+  text-align: center;
+}
+
+.box .contactbox h2 {
+
+}
+
+.box .contactbox form input {
+  display: block;
+
+}
+
+.infobox {
+
+}
