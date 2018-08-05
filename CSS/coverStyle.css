@@ -55,11 +55,12 @@
 
 .bar .operation, .property, .ubication, .btn{
   height: 90%;
+  box-sizing: border-box;
 }
 
-.bar option {
-  font: tahoma 20px grey;
-  text-align: center;
+.bar select, input {
+  font: 14px Tahoma;
+  color: grey;
 }
 
 .bar .operation {
