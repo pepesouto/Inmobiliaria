@@ -11,14 +11,15 @@
   
   display: flex; /* added*/
   flex-direction: column; /* added*/
-  justify-content: center; /* added*/
+  /*justify-content: center; /* added*/
   align-items: center; /* added*/
 }
 
 .slogan{
- /* margin: 0 auto; /*  0 added*/
+ /* margin: 0 auto;  substitued with align-items*/
   width: 45%;
-  margin: 2%;
+  margin-top: 10%;  /* added*/
+  margin-bottom: 2%;  /* added*/
 	/*position: relative;*/
   /*top: 15%;*/
   
@@ -37,7 +38,7 @@
 .content {
   height: 12%;
   width: 70%;
-  /*margin:0 auto; /*  0 added */
+  /*margin:0 auto; substitued with align-items*/
 	position: relative;
   /*top: 20%; */
   }
