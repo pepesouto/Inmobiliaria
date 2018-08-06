@@ -73,6 +73,7 @@
   padding: 0 3%;
   background: #f2f2f2;
   box-sizing: border-box;
+  margin: 1% 0;
 }
 
 .box .imgbox {
@@ -123,6 +124,7 @@
 
 .infobox .mainInfo, .datasheet, .amenities, .description {
   display: block;
+  height: auto;
   width: 100%;
   margin: 2%;
 }
