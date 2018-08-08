@@ -1,31 +1,21 @@
 
 .box{
-  
-
   background-image: url(../img/img.jpg); 
   background-size: cover;
   background-repeat: no-repeat;
-  /*width:100%  ; */
-  height: 500px;
+  width:100%;
+  height: 600px;
   background-position-y : -200px;
- /* position: absolute; */
-  /*text-align: center;  */
   
-  display: flex; /* added*/
-  flex-direction: column; /* added*/
-  /*justify-content: center; /* added*/
-  align-items: center; /* added*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .slogan{
- /* margin: 0 auto;  substitued with align-items*/
   width: 45%;
-  margin-top: 10%;  /* added*/
-  margin-bottom: 2%;  /* added*/
-	/*position: relative;*/
-  /*top: 15%;*/
-  
-  
+  margin-top: 10%; 
+  margin-bottom: 2%; 
 }
 
 .slogan h1 {
@@ -38,12 +28,9 @@
 }
 
 .content {
-
   height: 12%;
   width: 70%;
-  /*margin:0 auto; substitued with align-items*/
 	position: relative;
-  /*top: 20%; */
   }
 
 .barbackground, .bar {
@@ -59,16 +46,15 @@
 }
 
 .bar{
-  background: green;
-  padding: 2%;
+  padding:1%;
   box-sizing: border-box;
-
   display: flex;
-  flex-flow: row nowrap;
   justify-content: space-evenly;
+  align-items: center;
 }
 
 .bar .operation, .property, .ubication, .btn{
+  margin: .5%;
   height: 90%;
   box-sizing: border-box;
 }
@@ -77,7 +63,7 @@
   font: 13px Tahoma;
   color: grey;
 }
-/*
+
 .bar .operation {
   width: 20%;
 }
@@ -88,7 +74,7 @@
 
 .bar .ubication {
   width: 40%
-}*/
+}
 
 .bar .btn {
   background: orange;
@@ -96,4 +82,5 @@
   padding: 0 2%;
   color: white;
   font-size: 18px;
+  text-align: center;
 }
