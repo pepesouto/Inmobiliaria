@@ -31,7 +31,7 @@
   height: 12%;
   width: 70%;
 	position: relative;
-  }
+}
 
 .barbackground, .bar {
   height: 100%;
@@ -39,13 +39,9 @@
   position: absolute;
 }
 
-.barbackground {
-  background-color:black;
-  border-radius: 10px;
-  opacity: 0.7;
-}
-
 .bar{
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 10px;
   padding:1%;
   box-sizing: border-box;
   display: flex;
@@ -53,23 +49,29 @@
   align-items: center;
 }
 
-.bar .operation, .property, .ubication, .btn{
+.bar .innerbox {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar .ubication, .btn{
   margin: .5%;
   height: 90%;
   box-sizing: border-box;
 }
 
+.bar .innerbox .operation, .property {
+  width: 49.5%;
+  height: 100%;
+}
+
+
 .bar select, input {
   font: 13px Tahoma;
   color: grey;
-}
-
-.bar .operation {
-  width: 20%;
-}
-
-.bar .property {
-  width: 25%;
 }
 
 .bar .ubication {
@@ -83,4 +85,12 @@
   color: white;
   font-size: 18px;
   text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+  .slogan { width: 70%;}
+  .slogan h1 { font-size: 24px;}
+  .content { height: 30%; }
+  .bar  { flex-flow: column nowrap; padding: 2%; } 
+  .bar .innerbox, .bar .ubication, .btn { width: 100%;}
 }
