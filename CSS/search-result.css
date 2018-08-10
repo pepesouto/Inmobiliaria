@@ -71,6 +71,8 @@
 .container .resultsbox .result .description h3{
   font-size: 12px;
   font-weight: bold;
+  color: red;
+  text-transform: capitalize;
 }  
 
 
