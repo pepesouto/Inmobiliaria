@@ -101,5 +101,11 @@
 	#header .navs .opt2{
 		display: none;
 	}
+}
 
+@media screen and (max-width: 400px) {
+	#header .navs .opt1 li{
+		font-size: 11px;
+		margin: 1%;
+	}
 }
