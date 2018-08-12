@@ -91,6 +91,54 @@
   text-align: center;
 }
 
+.recomendationbox{
+}
+
+.recomendationbox .recomendationHeader{
+  width: 100%;
+  background: #4EC5C1;
+  padding-top: 25px;
+  height: 115px;
+}
+
+.recomendationbox .recomendationHeader h2{
+  font-family: tahoma;
+  font-size: 33px;
+  text-align: center;
+  color: #fff;
+  
+}
+
+
+.recomendationbox .recomendedbox{
+  
+  padding: 3% 10%;
+  display: flex;
+  flex-flow: column nowrap;
+
+}
+
+.recomendationbox .recomendedbox .row{
+  margin: 3% 0 0 0;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+}
+
+.recomendationbox .recomendedbox .row .recomendedproperty{
+  width: 30%;
+  height: 30%;
+
+}
+
+
+.recomendationbox .recomendedbox .row .recomendedproperty img{
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+
+
 @media screen and (max-width: 768px) {
   .slogan { width: 70%;}
   .slogan h1 { font-size: 24px;}
