@@ -141,12 +141,17 @@
   margin: .5%;
   width: 30%;
   height: 30%;
+  overflow:hidden
 }
 
 .recommendationbox .recommendedbox .recommendedproperty img{
   object-fit: contain;
   width: 100%;
   height: 100%;
+}
+
+.recommendationbox .recommendedbox .recommendedproperty img:hover{
+  transform: scale(1.05);
 }
 
 #footer {

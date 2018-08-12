@@ -26,7 +26,7 @@ let property = [
 
 
 $(document).ready( function(){
-		
+
 	$(".locationtext").text(zone[0].name);
 	$(".id").text("Id: " + property[0].id);
 	$(".zoneId").text("Zone Id: " + property[0].zoneId);
@@ -34,7 +34,7 @@ $(document).ready( function(){
 	$(".propertyType").text("Property Type: " + property[0].propertyType);
 	/*$(".propertyType").capitalize();*/
 	$(".operationType").text("Operation Type: " + property[0].operationType);
-	
+
 	$(".details").text(function(){
 		ret = "";
 		property[0].details.forEach(e => function(){
@@ -42,5 +42,8 @@ $(document).ready( function(){
 		return ret;
 		})
 	});
-		
+
+
+	
+
 });
