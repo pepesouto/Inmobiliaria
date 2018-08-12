@@ -91,9 +91,6 @@
   text-align: center;
 }
 
-.recomendationbox{
-}
-
 .recomendationbox .recomendationHeader{
   width: 100%;
   background: #4EC5C1;
@@ -137,7 +134,7 @@
   object-fit: contain;
   width: 100%;
   height: 100%;
-
+}
 
 @media screen and (max-width: 768px) {
   .slogan { width: 70%;}
@@ -146,5 +143,10 @@
   .bar  { flex-flow: column nowrap; padding: 2%; } 
   .bar .innerbox, .bar .ubication, .btn { width: 100%;}
 
+  
+  .recomendationbox .recomendationHeader{ height: 60px;  }
+  
+  .recomendationbox .recomendationHeader h2{ font-size: 20px;  }
 
+  
 }
