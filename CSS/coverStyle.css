@@ -1,6 +1,6 @@
 
 .box{
-  background-image: url(../img/img.jpg); 
+  background-image: url(../img/img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8,7 +8,7 @@
   height: 600px;
   /*background-position-y : -200px;  maybe not necessary with  background-position:center now*/
   /*background-position-x : -50px;  to center de paintings */
-  
+
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,8 +18,8 @@
 
 .slogan{
   width: 45%;
-  margin-top: 10%; 
-  margin-bottom: 2%; 
+  margin-top: 10%;
+  margin-bottom: 2%;
 }
 
 .slogan h1 {
@@ -37,13 +37,10 @@
 	position: relative;
 }
 
-.barbackground, .bar {
+.bar{
   height: 100%;
   width: 100%;
   position: absolute;
-}
-
-.bar{
   background-color: rgba(0,0,0, 0.7);
   border-radius: 10px;
   padding:1%;
@@ -91,62 +88,95 @@
   text-align: center;
 }
 
-.recomendationbox .recomendationHeader{
+.recommendationbox .recommendationHeader{
   width: 100%;
-  background: #4EC5C1;
-  padding-top: 25px;
-  height: 115px;
+  background-image: url(../img/mapimg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: 3%;
+  height: 160px;
 }
 
-.recomendationbox .recomendationHeader h2{
+.recommendationbox .recommendationHeader .recommendationHeaderText {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  background-color: rgba(0, 115, 153, 0.5);
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+}
+
+.recommendationbox .recommendationHeader h2{
   font-family: tahoma;
   font-size: 33px;
+  margin: .5%;
   text-align: center;
   color: #fff;
-  
 }
 
 
-.recomendationbox .recomendedbox{
-  
-  padding: 3% 10%;
+.recommendationbox .recommendedbox{
+  padding: 3% 5%;
+  box-sizing: border-box;
   display: flex;
-  flex-flow: column nowrap;
-
+  flex-flow: row wrap;
+  align-content: space-between;
+  justify-content: space-between;
 }
 
-.recomendationbox .recomendedbox .row{
+/* .recomendationbox .recomendedbox .row{
   margin: 3% 0 0 0;
-
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-around;
-}
+} */
 
-.recomendationbox .recomendedbox .row .recomendedproperty{
+/* .recomendationbox .recomendedbox .row .recomendedproperty{
   width: 30%;
   height: 30%;
+} */
 
+.recommendationbox .recommendedbox .recommendedproperty{
+  margin: .5%;
+  width: 30%;
+  height: 30%;
 }
 
-
-.recomendationbox .recomendedbox .row .recomendedproperty img{
+.recommendationbox .recommendedbox .recommendedproperty img{
   object-fit: contain;
   width: 100%;
   height: 100%;
 }
 
+#footer {
+  width: 100%;
+  height: 100px;
+  background-color: rgb(255, 153, 51);
+}
+
 @media screen and (max-width: 768px) {
+  /* .box { height: 600px; border: yellow 2px dotted; } */
+  .content {
+    height: 30%; /*no hace nada esto*/
+  }
   .slogan { width: 70%;}
   .slogan h1 { font-size: 24px;}
   .content { height: 30%; }
-  .bar  { flex-flow: column nowrap; padding: 2%; } 
+  .bar  { flex-flow: column nowrap; padding: 2%; }
   .bar .innerbox, .bar .ubication, .btn { width: 100%;}
 
-  
-  .recomendationbox .recomendationHeader{ height: 60px;  }
-  
-  .recomendationbox .recomendationHeader h2{ font-size: 20px;  }
 
-  
+  .recommendationbox .recommendationHeader{ height: 100px;  }
+
+  .recommendationbox .recommendationHeader h2{ font-size: 20px;  }
+  .recommendationbox .recommendedbox {
+    overflow-y: hidden;
+    align-content: flex-start;
+  }
+  .recommendationbox .recommendedbox .recommendedproperty{ width: 48%;}
+
+  #footer {  height: 50px; }
+
+
 }
