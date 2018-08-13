@@ -192,9 +192,9 @@
 .infobox .mainInfo ul li {
   background: #ff003b;
   text-align: center;
-  width: 30px;           /*OJO ACAAAA*/
-  height: 30px;         /*OJO ACAAAA*/
-  line-height: 30px;  /*esto lo centra verticalmente wtf*/
+  width: 30px;           
+  height: 30px;         
+  line-height: 30px;  
   border-radius: 50%;
   color: whitesmoke;
 }
@@ -259,11 +259,15 @@
     height: 30%;
     margin: 0;
     margin-bottom: 3%;
+    
+
 
   }
 
   .box .imgbox .mySlides{
     height: 300px;
+    
+    
   }
   .box .contactbox{
     width: 60%;
