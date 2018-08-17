@@ -25,6 +25,11 @@
 
   width: 50%;
   box-sizing: border-box;
+
+  height: 100%;
+  overflow: auto;
+
+
 }
 
 .container .resultsbox .result {
@@ -34,6 +39,7 @@
   background:#eee;
   border-radius: 5px;
   font-family: tahoma;
+  padding: 2%;
 
   display: flex;
   flex-flow: row nowrap;  
@@ -56,7 +62,9 @@
 }
 
 .container .resultsbox .result .description {
-  
+  display: flex;
+  flex-flow: column;
+
   width: 70%;
   padding: 1%;
   box-sizing: border-box;
@@ -73,6 +81,7 @@
   font-weight: bold;
   color: red;
   text-transform: capitalize;
+  flex-direction: initial;
 }  
 
 
@@ -106,10 +115,57 @@
   .container .resultsbox{
     width: 100%;
     flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+
+
+    height: auto;
+    overflow: visible;
+
   }
   .container .resultsbox .result{
-    width: 48%;
- 
+    width: 45%;
   }
 
+  .container .resultsbox .result .imgbox {
+    width: 40%;
+  }  
+  .container .resultsbox .result .description {
+    align-items: flex-start;
+    line-height: 1.5em;
+    width: 60%;
+  }  
+  .container .resultsbox .result .description h3{
+    font-size: 10px;
+  }
+  .container .resultsbox .result .description h2{
+    font-size: 12px;
+  }  
+  
+  .container .resultsbox .result .description p{
+    font-size: 11px;
+  }  
+}
+
+
+
+@media screen and (max-width: 450px) {
+  
+  .container .resultsbox{
+   flex-flow: column nowrap;
+   align-items : center;
+  }
+  
+  .container .resultsbox .result{
+    width: 90%;
+  }
+  
+  .container .resultsbox .result .description {
+    padding: 5%;     
+    line-height: 1em;
+  }
+  .container .resultsbox .result .imgbox {
+    height: 98%;
+    
+  }
 }
