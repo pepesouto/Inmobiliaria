@@ -8,20 +8,22 @@
     </head>
 
     <body>
-        <header>
+        <header id="header">
             <a class="logo" href="cover.html">
               <img src="img/logo.png" alt="Cabildo 500">
             </a>
-            <ul class="opt1">
-                <li><a href="">VENTA</a></li>
-                <li><a href="">ALQUILER</a></li>
-                <li><a href="">PROYECTOS</a></li>
-            </ul>
-            <ul class="opt2">
-                <li><a href="">Contacto</a></li>
-                <li><button href="">Publicar</button></li>
-                <li><a href="">Iniciar Sesion</a></li>
-            </ul>
+            <nav class="navs">
+              <ul class="opt1">
+                  <li><a href="">VENTA</a></li>
+                  <li><a href="">ALQUILER</a></li>
+                  <li><a href="">PROYECTOS</a></li>
+              </ul>
+              <ul class="opt2">
+                  <li><a href="">Contacto</a></li>
+                  <li><button href="">Publicar</button></li>
+                  <li><a href="">Iniciar Sesion</a></li>
+              </ul>
+            </nav>
         </header>
 
         <article class="box">
@@ -30,36 +32,88 @@
                 <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
             </section>
 
+            <section class="content">
+              <div class="bar">
+                  <div class="innerbox">
+                    <select class="operation">
+                            <option value="venta">Venta</option>
+                            <option value="alquiler">Alquiler</option>
+                            <option value="alquilerTemporal">Alquiler Temporal</option>
+                    </select>
 
-            <section class="bar">
+                    <select class="property">
+                            <option value="casas">Casas</option>
+                            <option value="aprtamentos">Apartamentos</option>
+                            <option value="terrenos">Terrenos</option>
+                            <option value="locales">Locales Comerciales</option>
+                            <option value="oficinas">Oficinas</option>
+                    </select>
+                  </div>
 
-                <select class="operation">
-                        <option value="venta">Venta</option>
-                        <option value="alquiler">Alquiler</option>
-                        <option value="alquilerTemporal">Alquiler Temporal</option>
-                </select>
+                  <input class="ubication" type="text" name="ubication" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
 
-                <select class="property">
-                        <option value="casas">Casas</option>
-                        <option value="aprtamentos">Apartamentos</option>
-                        <option value="terrenos">Terrenos</option>
-                        <option value="locales">Locales Comerciales</option>
-                        <option value="oficinas">Oficinas</option>
-                </select>
+                  <button class="btn">Buscar</button>
 
-                <input class="ubication" type="text" name="ubication" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
-
-                <button>Buscar</button>
-
-                <div>
-                    <a href="">Buscar por referencia</a>
-                </div>
+              </div>
             </section>
-
-
-
         </article>
 
+        <section class="recommendationbox">
+          <header class="recommendationHeader">
+            <div class="recommendationHeaderText">
+              <h2 class="title"> ❤ </h2>
+              <h2 class="title"> Busquedas Recomendadas </h2>
+            </div>
+          </header>
 
+          <div id="recommendedbox" class="recommendedbox">
+
+                <!-- <div class="row">
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                    <div class="recommendedproperty">
+                        <img src="img/beach.jpg" alt="Recomended Property">
+                    </div>
+                </div> -->
+
+
+          </div>
+        </section>
+
+        <footer id="footer">
+        </footer>
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"
+        integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+        crossorigin="anonymous"></script>
+        <script src="js/coverdynamicload.js"></script>
     </body>
 </html>

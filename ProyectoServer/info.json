@@ -1,0 +1,58 @@
+{ "properties": [
+	{
+		"id": 1,
+		"name":"Ideal estudiante! Proximo universidades",
+		"images": [ "../img/destacados/1.png",
+		             "../img/destacados/2.png" ] ,
+		"zoneId": 1,
+		"propertyType": "Apartment",
+		"operationType": "Rent",
+		"details": [ { "size" : "45mtr2"} ],
+		"place" : { "lat":-34.911255, "lng": -56.167764},
+		"address": "Gonzalo Ramirez 2355",
+		"isHighlight": true
+	},
+
+  {
+		"id": 2,
+		"name":"Gran oportunidad excelente ubicacion",
+		"images":  [ "../img/destacados/3.png",
+		             "../img/destacados/4.png" ] ,
+		"zoneId": 3,
+		"propertyType": "House",
+		"operationType": "Sale",
+		"details": [ { "size" : "250mtr2"} ],
+		"place" : { "lat":-34.896433, "lng": -56.120880},
+		"address": "Comercio y Verdi",
+		"isHighlight": true
+	},
+
+  {
+		"id": 3,
+		"name":"Amplio apartamento ubicado sobre avenida! Proximo Tres Cruces",
+		"images":  [ "../img/destacados/5.png",
+		             "../img/destacados/6.png" ] ,
+		"zoneId": 6,
+		"propertyType": "Apartment",
+		"operationType": "Rent",
+		"details": [ { "size" : "77mtr2"} ],
+		"place" : { "lat":-34.891403, "lng": -56.157308},
+		"address": "Av. Italia 2685",
+		"isHighlight": true
+	},
+
+  {
+		"id": 4,
+		"name":"Excelente penthouse Parque Rodo!",
+		"images":  [ "../img/destacados/7.png",
+		             "../img/destacados/8.png" ] ,
+		"zoneId": 1,
+		"propertyType": "Apartment",
+		"operationType": "Sale",
+		"details": [ { "size" : "123mtr2"} ],
+		"place" : { "lat":-34.917658, "lng": -56.163211},
+		"address": "Itapua 2308",
+		"isHighlight": false
+	}
+]
+}
