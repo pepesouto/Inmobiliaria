@@ -2,8 +2,8 @@
 	{
 		"id": 1,
 		"name":"Ideal estudiante! Proximo universidades",
-		"images": [ "../img/destacados/1.png",
-		             "../img/destacados/2.png" ] ,
+		"images": [ "img/destacados/1.png",
+		             "Real-State-Company/img/destacados/2.png" ] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Rent",
@@ -30,8 +30,8 @@
   {
 		"id": 3,
 		"name":"Amplio apartamento ubicado sobre avenida! Proximo Tres Cruces",
-		"images":  [ "../img/destacados/5.png",
-		             "../img/destacados/6.png" ] ,
+		"images":  [ "img/destacados/5.png",
+		             "img/destacados/6.png" ] ,
 		"zoneId": 6,
 		"propertyType": "Apartment",
 		"operationType": "Rent",
@@ -44,8 +44,8 @@
   {
 		"id": 4,
 		"name":"Excelente penthouse Parque Rodo!",
-		"images":  [ "../img/destacados/7.png",
-		             "../img/destacados/8.png" ] ,
+		"images":  [ "../img/destacados/7.jpg",
+		             "../img/destacados/8.jpg" ] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Sale",
