@@ -2,7 +2,7 @@ $(document).ready(function(){
 
   var container = document.getElementById('recommendedbox');
   var docFrag = document.createDocumentFragment();
-  
+
   fetch('http://localhost:3000/properties?isHighlight=true')
   .then(function(response) {
     return response.json();

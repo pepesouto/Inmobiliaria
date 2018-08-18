@@ -1,36 +1,68 @@
 
 $(document).ready(function(){
 
-  console.log("hola estoy imprimiendo cosas");
-  $("#buscar").click(function(){
-    console.log("hola estoy imprimiendo cosas");
 
-    var operationId = document.getElementById("operationId");
-    var typeId = document.getElementById("typeId");
-    var zone = document.getElementById("zoneId");
+    var urlParams = new URLSearchParams(window.location.search);
+
+    var operationId = urlParams.get('operationType');
+    var zone = urlParams.get('zoneId');
+    var typeId = urlParams.get('propertyType');
 
 
-    /*
-    var container = document.getElementById('recommendedbox');
-  	var docFrag = document.createDocumentFragment();*/
+    var url = new URL("http://localhost:3000/properties"),
+    params = {"zoneId": zone, "operationType":operationId, "propertyType": typeId};
+    Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
 
-    fetch('http://localhost:3000/properties?zoneId=zone&type=typeId&operationType=operationId')
+    fetch(url)
     .then(function(response) {
-      console.log("holi");
       return response.json();
     })
     .then(function(myJson) {
       console.log(myJson);
-      console.log("hola estoy imprimiendo cosas");
-      /*myJson.forEach(function(element) {
+      var container = document.getElementById('resultbox');
+      myJson.forEach(function(element) {
         var img = document.createElement('img');
         var theDiv = document.createElement('div');
-        $(theDiv).addClass("recommendedproperty");
+        var divDescription = document.createElement('div');
+        var typeProp = document.createElement('h3');
+        $(typeProp).addClass("type");
+        $(typeProp).html(element.name);
+        var descrProp = document.createElement('h2');
+        $(descrProp).addClass("title");
+        $(descrProp).html(element.address);
+        var descrtext = document.createElement('p');
+        $(descrtext).addClass("text");
+        $(descrtext).html(element.details[0].size);
+        $(divDescription).prepend(descrtext);
+        $(divDescription).prepend(descrProp);
+        $(divDescription).prepend(typeProp);
+        var theSect = document.createElement('section');
+        $(divDescription).addClass("description");
+        $(theSect).addClass("result");
+        $(theDiv).addClass("imgbox");
+        $(theSect).prepend(divDescription);
+        $(theSect).prepend(theDiv);
         $(theDiv).prepend(img);
         img.src = element.images[0];
-        docFrag.appendChild(theDiv);*/
-    });
-  });
+        container.appendChild(theSect);
 
+
+        var map = document.getElementById("map");
+        if(map){
+          var mapOptions = {
+            zoom: 14,
+            center: new google.maps.LatLng(element.place.lat, element.place.lng),
+            scrollwheel: false
+          }
+          new google.maps.Map(map, mapOptions);
+          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+          var marker = new google.maps.Marker({
+            position: new google.maps.LatLng(element.place.lat, element.place.lng),
+            map: map
+          });
+          marker.setMap(map);
+        }
+      });
+    })
 
 });
