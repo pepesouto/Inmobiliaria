@@ -3,7 +3,7 @@
 		"id": 1,
 		"name":"Ideal estudiante! Proximo universidades",
 		"images": [ "img/destacados/1.png",
-		             "Real-State-Company/img/destacados/2.png" ] ,
+		             "img/destacados/2.png" ] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Rent",
@@ -16,8 +16,8 @@
   {
 		"id": 2,
 		"name":"Gran oportunidad excelente ubicacion",
-		"images":  [ "../img/destacados/3.png",
-		             "../img/destacados/4.png" ] ,
+		"images":  [ "img/destacados/3.png",
+		             "img/destacados/4.png" ] ,
 		"zoneId": 3,
 		"propertyType": "House",
 		"operationType": "Sale",
@@ -41,11 +41,25 @@
 		"isHighlight": true
 	},
 
+	{
+		"id": "PRUEBA",
+		"name":"Amplio apartamento ubicado sobre avenida! Proximo Tres Cruces",
+		"images":  [ "img/destacados/5.png",
+		             "img/destacados/6.png" ] ,
+		"zoneId": "malvin",
+		"propertyType": "casas",
+		"operationType": "venta",
+		"details": [ { "size" : "77mtr2"} ],
+		"place" : { "lat":-34.891403, "lng": -56.157308},
+		"address": "Av. Italia 2685",
+		"isHighlight": true
+	},
+
   {
 		"id": 4,
 		"name":"Excelente penthouse Parque Rodo!",
-		"images":  [ "../img/destacados/7.jpg",
-		             "../img/destacados/8.jpg" ] ,
+		"images":  [ "img/destacados/7.jpg",
+		             "img/destacados/8.jpg" ] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Sale",
