@@ -35,13 +35,13 @@
             <section class="content">
               <div class="bar">
                   <div class="innerbox">
-                    <select class="operation">
+                    <select class="operation" id="operationId">
                             <option value="venta">Venta</option>
                             <option value="alquiler">Alquiler</option>
                             <option value="alquilerTemporal">Alquiler Temporal</option>
                     </select>
 
-                    <select class="property">
+                    <select class="property" id="typeId">
                             <option value="casas">Casas</option>
                             <option value="aprtamentos">Apartamentos</option>
                             <option value="terrenos">Terrenos</option>
@@ -50,9 +50,9 @@
                     </select>
                   </div>
 
-                  <input class="ubication" type="text" name="ubication" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
+                  <input class="ubication" id="zoneId" type="text" name="ubication" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
 
-                  <button class="btn">Buscar</button>
+                  <button class="btn" id="buscar">Buscar</button>
 
               </div>
             </section>
@@ -66,46 +66,7 @@
             </div>
           </header>
 
-          <div id="recommendedbox" class="recommendedbox">
-
-                <!-- <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div> -->
-
-
-          </div>
+          <div id="recommendedbox" class="recommendedbox"></div>
         </section>
 
         <footer id="footer">
@@ -115,5 +76,6 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
         <script src="js/coverdynamicload.js"></script>
+        <script src="js/searchresultdynamicload.js"></script>
     </body>
 </html>
