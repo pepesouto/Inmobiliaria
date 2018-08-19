@@ -67,6 +67,65 @@
 		"place" : { "lat":-34.917658, "lng": -56.163211},
 		"address": "Itapua 2308",
 		"isHighlight": false
+	},
+
+  {
+		"id": 5,
+		"name":"Cómodo apartamento en el corazón de Pocitos",
+		"images":  [ "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large", 
+								"https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large",
+								"https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large",
+								"https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large",
+								"https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large",
+								"https://a0.muscache.com/im/pictures/92886577/3d07e52a_original.jpg?aki_policy=x_large",
+								"https://a0.muscache.com/im/pictures/92886773/38e6946a_original.jpg?aki_policy=x_large" ] ,
+		"zoneId": 7,
+		"propertyType": "Apartment",
+		"operationType": "Rent",
+		"details": [ { "size" : "45mtr2"} ],
+		"place" : { "lat":-34.910433, "lng":-56.152203},
+		"address": "Avenida Brasil 2890",
+		"isHighlight": true
 	}
+],
+
+"postImages": [
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large", 			
+		"onclick":	"currentSlide(1)",
+		"alt": "1st photo"
+		
+	},
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large", 			
+		"onclick":	"currentSlide(2)",
+		"alt": "2nd photo"
+		
+	},
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large", 			
+		"onclick":	"currentSlide(3)",
+		"alt": "3rd photo"
+		
+	},
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large", 			
+		"onclick":	"currentSlide(4)",
+		"alt": "4th photo"
+		
+	},
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large", 			
+		"onclick":	"currentSlide(5)",
+		"alt": "5th photo"
+		
+	},
+	{
+		"images": "https://a0.muscache.com/im/pictures/92886773/38e6946a_original.jpg?aki_policy=x_large", 			
+		"onclick":	"currentSlide(6)",
+		"alt": "6th photo"
+		
+	}
+	
 ]
 }

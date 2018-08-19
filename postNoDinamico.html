@@ -65,74 +65,38 @@
 
 
             <!-- Container for the image gallery -->
-        <div class="imgbox" id="imgbox">
-            <!-- <script src="js/slidesdynamic.js"></script> -->
-            
-            <script>
-                         
-                var container = document.getElementById('imgbox');
-
-                fetch("http://localhost:3000/postImages")
-                .then(function(response) {
-                return response.json();
-
-                })
-                .then(function(myJson) {
-                var itr = 1;
-                myJson.forEach(function(element) {
-                    var img = document.createElement('img');
-                    var divSlides = document.createElement('div');
-                    var divText = document.createElement('div');
-
-                    $(divSlides).addClass("mySlides");
-                    $(img).addClass("demo cursor");
-                    $(divText).addClass("numbertext");
-
-                    $(divSlides).prepend(divText);
-                    $(divText).prepend(img);
-                    img.src = element.images;
-                    container.appendChild(divSlides);
-                });
-
-                });
-            </script>
+        <div class="imgbox">
 
             <!-- Full-width images with number text -->
-            <!-- <div class="mySlides">
+            <div class="mySlides">
             <div class="numbertext">1 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large" 
-                style="width:100%">
+                <img src="img/beach.jpg" style="width:100%">
             </div>
 
             <div class="mySlides">
             <div class="numbertext">2 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large" 
-                style="width:100%">
+                <img src="img/destacados/1.png" style="width:100%">
             </div>
 
             <div class="mySlides">
             <div class="numbertext">3 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large"
-                 style="width:100%">
+                <img src="img/destacados/2.png" style="width:100%">
             </div>
 
             <div class="mySlides">
             <div class="numbertext">4 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large"
-                 style="width:100%">
+                <img src="img/destacados/3.png" style="width:100%">
             </div>
 
             <div class="mySlides">
             <div class="numbertext">5 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large"
-                 style="width:100%">
+                <img src="img/destacados/4.png" style="width:100%">
             </div>
 
             <div class="mySlides">
             <div class="numbertext">6 / 6</div>
-                <img src="https://a0.muscache.com/im/pictures/92886577/3d07e52a_original.jpg?aki_policy=x_large"
-                 style="width:100%">
-            </div> -->
+                <img src="img/destacados/5.png" style="width:100%">
+            </div>
 
             <!-- Next and previous buttons -->
             <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
@@ -144,38 +108,30 @@
             </div>
 
             <!-- Thumbnail images -->
-            
-            <div class="row" id="row">
-                <!-- <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large" 
-                    style="width:100%" onclick="currentSlide(1)" alt="Beach House">
+            <div class="row">
+                <div class="columnCarousel">
+                    <img class="demo cursor" src="img/beach.jpg" style="width:100%" onclick="currentSlide(1)" alt="Beach House">
                 </div>
                 <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large" 
-                    style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
+                    <img class="demo cursor" src="img/destacados/1.png" style="width:100%" onclick="currentSlide(2)" alt="Cinque Terre">
                 </div>
                 <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large"
-                    style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
+                    <img class="demo cursor" src="img/destacados/2.png" style="width:100%" onclick="currentSlide(3)" alt="Mountains and fjords">
                 </div>
                 <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large"
-                     style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
+                    <img class="demo cursor" src="img/destacados/3.png" style="width:100%" onclick="currentSlide(4)" alt="Northern Lights">
                 </div>
                 <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large"
-                    style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
+                    <img class="demo cursor" src="img/destacados/4.png" style="width:100%" onclick="currentSlide(5)" alt="Nature and sunrise">
                 </div>
                 <div class="columnCarousel">
-                    <img class="demo cursor" src="https://a0.muscache.com/im/pictures/92886577/3d07e52a_original.jpg?aki_policy=x_large"
-                    style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
-                </div> -->
+                    <img class="demo cursor" src="img/destacados/5.png" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+                </div>
             </div>
         </div>
 
 
-        
-        <script src="js/postdynamicload.js"></script>
+
 
         <script>
             var slideIndex = 1;
@@ -202,11 +158,11 @@
                 for (i = 0; i < dots.length; i++) {
                     dots[i].className = dots[i].className.replace(" active", "");
                 }
-                // slides[slideIndex-1].style.display = "block";
-                // dots[slideIndex-1].className += " active";
-                // captionText.innerHTML = dots[slideIndex-1].alt;
+                slides[slideIndex-1].style.display = "block";
+                dots[slideIndex-1].className += " active";
+                captionText.innerHTML = dots[slideIndex-1].alt;
             }
-        </script>
+            </script>
 
 
           <aside class="contactbox">
@@ -306,6 +262,7 @@
         <script src="https://code.jquery.com/jquery-3.3.1.min.js"
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
         crossorigin="anonymous"></script>
+        <script src="js/postdynamicload.js"></script>
 
     </body>
 

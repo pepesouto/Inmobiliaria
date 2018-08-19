@@ -5,6 +5,22 @@
 </head>
 <body>
   <div id="div1">El texto superior se ha creado dinámicamente.</div>
-  <script> src="prueba.js"</script>
+  
 </body>
+
+<script>
+document.body.onload = addElement;
+function addElement () { 
+  // crea un nuevo div 
+  // y añade contenido 
+  var newDiv = document.createElement("div"); 
+  var newContent = document.createTextNode("Hola!¿Qué tal?"); 
+  newDiv.appendChild(newContent); //añade texto al div creado. 
+
+  // añade el elemento creado y su contenido al DOM 
+  var currentDiv = document.getElementById("div1"); 
+  document.body.insertBefore(newDiv, currentDiv); 
+}
+</script>
 </html>
+
