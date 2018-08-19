@@ -72,12 +72,11 @@
   align-items: center;
 
 
-  height: 500px;
+  height: 600px;
   width: 100%;
   padding: 0 3%;
   background: #f2f2f2;
   box-sizing: border-box;
-
 }
 
 .box .imgbox {
@@ -112,7 +111,6 @@
   border: 1px #f0f0f0 solid;
   font-family: tahoma;
   text-align: center;
-  
 }
 
 .box .contactbox h2, h4 {
@@ -262,6 +260,7 @@
     margin: 0;
     margin-bottom: 3%;
     
+
 
   }
 
