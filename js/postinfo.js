@@ -2,13 +2,20 @@
 
 $(document).ready(function(){
 
-  
-  fetch("http://localhost:3000/properties?id=11") //el id tiene q depender de cada propiedad
+  var urlParams = new URLSearchParams(window.location.search);
+
+  var id = urlParams.get('id');
+
+  var url = new URL("http://localhost:3000/properties"),
+  param = {"id": id };
+  Object.keys(param).forEach(key => url.searchParams.append(key, param[key]))
+
+  fetch(url) //el id tiene q depender de cada propiedad
   .then(function(response) {
     return response.json();
-  
+
   })
-  
+
   .then(function(myJson) {
     myJson.forEach(function(element) {
       $("#ownerName").html(element.owner[0].name);
@@ -26,7 +33,7 @@ $(document).ready(function(){
       $("#light").html(element.light);
       $("#AC").html(element.AC);
       $("#bedroom").html(element.bedroom);
-      
+
       $("#description").html(element.description);
       element.amenities[0].forEach(function(element){
         var container1 = document.getElementById('column1');
@@ -40,8 +47,7 @@ $(document).ready(function(){
         $(theLi).html(element);
         container1.appendChild(theLi);
       });
-    
+
     });
   });
   });
-  

@@ -24,18 +24,27 @@ $(document).ready(function(){
         var img = document.createElement('img');
         var theDiv = document.createElement('div');
         var divDescription = document.createElement('div');
-        var typeProp = document.createElement('h3');
-        $(typeProp).addClass("type");
-        $(typeProp).html(element.name);
+
+
+        var aux = document.createElement('a');
+        var link = "post.html?id=" + element.id;
+        $(aux).attr("href", link);
+
+        $(aux).addClass("type");
+        $(aux).html(element.name);
+
+
         var descrProp = document.createElement('h2');
         $(descrProp).addClass("title");
         $(descrProp).html(element.address);
         var descrtext = document.createElement('p');
         $(descrtext).addClass("text");
         $(descrtext).html(element.details[0].size);
-        $(divDescription).prepend(descrtext);
-        $(divDescription).prepend(descrProp);
-        $(divDescription).prepend(typeProp);
+
+        $(divDescription).append(descrProp);
+        $(divDescription).append(descrtext);
+        $(divDescription).prepend(aux);
+
         var theSect = document.createElement('section');
         $(divDescription).addClass("description");
         $(theSect).addClass("result");

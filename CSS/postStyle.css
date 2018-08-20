@@ -98,7 +98,7 @@
 
 .box .contactbox {
 
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -113,7 +113,7 @@
   border: 1px #f0f0f0 solid;
   font-family: tahoma;
   text-align: center;
-  
+
 }
 
 .box .contactbox h2, h4 {
@@ -174,7 +174,7 @@
 
 .infobox .mainInfo, .datasheet, .amenities, .description {
   width: 60%;
-  margin: 2%; 
+  margin: 2%;
   box-sizing:border-box;
 }
 
@@ -188,10 +188,10 @@
 
 .infobox .mainInfo ul {
   width: 80%;
-  height: 30px;               
+  height: 30px;
   display: inline-flex;
   flex-flow: row nowrap;
-  justify-content: space-between; 
+  justify-content: space-between;
   align-items: center;
 
 }
@@ -199,9 +199,9 @@
 .infobox .mainInfo ul li {
   background: #ff003b;
   text-align: center;
-  width: 30px;           
-  height: 30px;         
-  line-height: 30px;  
+  width: 30px;
+  height: 30px;
+  line-height: 30px;
   border-radius: 50%;
   color: whitesmoke;
 }
@@ -245,15 +245,15 @@
   text-align: justify;
 }
 
-.infobox span{
-  /* color: red; */
-}
+/* .infobox span{
+   color: red; 
+} */
 
 @media screen and (max-width: 800px) {
 	.innerHeader2 .socialMedia{
 		display: none;
   }
-  
+
   .box{
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -264,18 +264,18 @@
 
   .box .imgbox{
     width: 80%;
-    
+
     height: 15%;
     margin: 0;
     margin-bottom: 3%;
-    
+
 
   }
 
   .box .imgbox .mySlides{
     height: 300px;
-    
-    
+
+
   }
   .box .contactbox{
     width: 60%;
@@ -298,16 +298,16 @@
 
 
 @media screen and (max-width: 400px) {
-  
+
   .box .imgbox .mySlides{
     height: 200px;
   }
   .row .columnCarousel {
     height: 50px;
   }
-  
+
   .box .imgbox .caption-container {
     font-size: 12px;
   }
 
-}  
+}

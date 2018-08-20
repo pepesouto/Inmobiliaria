@@ -4,7 +4,15 @@ $(document).ready(function(){
 
 var container = document.getElementById('sliderImg');
 
-fetch("http://localhost:3000/properties?id=11") //el id tiene q depender de cada propiedad
+var urlParams = new URLSearchParams(window.location.search);
+
+var id = urlParams.get('id');
+
+var url = new URL("http://localhost:3000/properties"),
+param = {"id": id };
+Object.keys(param).forEach(key => url.searchParams.append(key, param[key]))
+
+fetch(url)
 .then(function(response) {
   return response.json();
 
@@ -37,16 +45,16 @@ jQuery(document).ready(function ($) {
         moveRight();
     }, 3000);
   });
-  
+
 	var slideCount = $('#slider ul li').length;
 	var slideWidth = $('#slider ul li').width();
 	var slideHeight = $('#slider ul li').height();
 	var sliderUlWidth = slideCount * slideWidth;
-	
+
 	$('#slider').css({ width: slideWidth, height: slideHeight });
-	
+
 	// $('#slider ul').css({ width: sliderUlWidth, marginLeft: - slideWidth });
-	
+
     $('#slider ul li:last-child').prependTo('#slider ul');
 
     function moveLeft() {
@@ -75,8 +83,6 @@ jQuery(document).ready(function ($) {
         moveRight();
     });
 
-});    
+});
 
 // THIS MAKES SLIDES WORK
-
-

@@ -73,13 +73,14 @@
 }
 
 
-.container .resultsbox .result .description h3{
+.container .resultsbox .result .description a{   /*h3 to a*/
   font-size: 16px;
   font-weight: bold;
   color: rgb(89, 89, 89);
   line-height: 1;
   text-transform: capitalize;
   flex-direction: initial;
+  text-decoration: none;
 }
 
 
