@@ -74,16 +74,16 @@
 
   height: 500px;
   width: 100%;
-  padding: 0 3%;
+  padding: 0 2%;
   background: #f2f2f2;
   box-sizing: border-box;
 
 }
 
 .box .imgbox {
-
-  margin: 20px 0;
-  width: 60%;
+  margin: 0 2% 0 0;
+  /* margin: 20px 0; */
+  width: 65%;
   height: 90%;
   object-fit: contain;
   box-sizing: border-box;
@@ -102,9 +102,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 20%;
-  height: auto;
-  margin: 7.5% 0;
+
+  width: 25%;
+  height: 70%;
+  /* margin: 7.5% 0; */
   padding: 1%;
   object-fit: contain;
   box-sizing: border-box;
@@ -121,12 +122,12 @@
 }
 
 .box .contactbox h2 {
-  font-size: 13px;
+  font-size: 100%;
   font-weight: bold;
 }
 
 .box .contactbox h4 {
-  font-size: 12px;
+  font-size: 100%;
 }
 
 .box .contactbox form {
@@ -149,6 +150,10 @@
   padding: 0 2%;
   color: white;
   font-size: 14px;
+}
+
+.box .contactbox button {
+  margin: 5% 0;
 }
 
 .infobox {
@@ -240,7 +245,9 @@
   text-align: justify;
 }
 
-
+.infobox span{
+  /* color: red; */
+}
 
 @media screen and (max-width: 800px) {
 	.innerHeader2 .socialMedia{
@@ -256,9 +263,9 @@
   }
 
   .box .imgbox{
-    width: 90%;
+    width: 80%;
     
-    height: 30%;
+    height: 15%;
     margin: 0;
     margin-bottom: 3%;
     

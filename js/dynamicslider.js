@@ -4,7 +4,7 @@ $(document).ready(function(){
 
 var container = document.getElementById('sliderImg');
 
-fetch("http://localhost:3000/properties?id=5") //el id tiene q depender de cada propiedad
+fetch("http://localhost:3000/properties?id=11") //el id tiene q depender de cada propiedad
 .then(function(response) {
   return response.json();
 
@@ -20,8 +20,6 @@ fetch("http://localhost:3000/properties?id=5") //el id tiene q depender de cada 
       img.src = element;
       container.appendChild(theLi);
 
-      var currentDiv = document.getElementById("logocabildo"); 
-      document.body.insertBefore(theLi, currentDiv); 
     });
   });
 

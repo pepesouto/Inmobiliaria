@@ -89,6 +89,11 @@
   text-align: center;
 }
 
+.recommendationbox{
+  height: 100%;
+  width: 100%;
+}
+
 .recommendationbox .recommendationHeader{
   width: 100%;
   background-image: url(../img/mapimg.png);
@@ -123,7 +128,10 @@
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
-  justify-content: space-around;
+  justify-content: space-around; 
+  
+  width: 100%;
+  height: 100%;
 }
 
 /* .recomendationbox .recomendedbox .row{
@@ -141,8 +149,8 @@
 .recommendationbox .recommendedbox .recommendedproperty{
   margin: .5%;
   width: 30%;
-  height: 30%;
-  overflow:hidden
+  height: 30%; 
+  overflow:hidden;
 }
 
 .recommendationbox .recommendedbox .recommendedproperty img{

@@ -2,6 +2,7 @@
 <html> 
     <header>
         <title> Post Title </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/headerstyle.css">
         
@@ -34,14 +35,14 @@
         </header>
 
         <header class="innerHeader">
-            <h1>Post Title</h1>
+            <h1 class="postTitle"id="postTitle"></h1>
         </header>
 
         <div class="innerHeader2">
             <div class="location">
-                <img src="" alt="">
+                <!-- <img src="" alt=""> -->
                 <h4>Zona:</h4>
-                <h4 class="locationtext">Punta Ballena</h4>
+                <h4 class="zoneId"></h4>
             </div>
             <nav class="socialMedia">
                 <ul>
@@ -56,36 +57,20 @@
 
         <div  class="box">
 
-
-
-        <!--
-          <section class="imgbox">
-              <img src="img/beach.jpg" alt="img">
-
-          </section>
-        -->
-
-
-
-            <!-- Container for the image gallery -->
           <div class="imgbox" id="slider">
             <a href="#" class="control_next">></a>
             <a href="#" class="control_prev"><</a>
             <ul id="sliderImg">
                 <li id=logocabildo> <img src="../img/logo.png" alt="logo" ></li> <!--si no hay dos, no funciona la carga dinamica-->
                 <li> <img src="../img/logo.png" alt="logo"></li>
-                <!-- <li> <img src="5.png" alt="img 7"></li> -->
-                <!-- <li> <img src="8.jpg" alt="img 8"></li> -->
-                <!-- <li> <img src="9.png" alt="img 9"></li> -->
-                
             </ul>
           </div> <!--imgbox-->
 
 
           <aside class="contactbox">
               <h2>Consultar Anunciante</h2>
-              <h4>Cabildo 500</h4>
-              <h2> 099 987 654</h2>
+              <h4 id="ownerName">Name</h4>
+              <h2 id="ownerPhone">Phone Number </h2>
             <form action="">
               <input type="text" placeholder="* Nombre Completo" required/>
               <input type="text" placeholder="* E-mail" required/>
@@ -123,25 +108,25 @@
                 </div>
                 <div class="column">
                     <ul>
-                        <li class="id">Id</li>
-                        <li class="zoneId">Zone</li>
-                        <li class="address">Address</li>
-                        <li class="">Bathroom</li>
-                        <li>Bedroom</li>
-                        <li>Pet Friendly</li>
-                        <li>Elem</li>
+                        <li>Id: <span id="id">Ask them!</span>  </li>
+                        <li>Zone: <span class="zoneId">Ask them!</span> </li>
+                        <li>Address: <span id="address">Ask them!</span> </li>
+                        <li>Bathroom(s): <span id="bathroom">Ask them!</span> </li>
+                        <li>Bedroom(s): <span id="bedroom">Ask them!</span> </li>
+                        <li>Pet Friendly: <span id="petFriendly">Ask them!</span> </li>
+                        <!-- <li>Elem</li> -->
                     </ul>
                 </div>
 
                 <div class="column">
                     <ul>
-                        <li class="propertyType">Property Type</li>
-                        <li class="operationType">Operation Type</li>
-                        <li class="Mt">Size</li>
-                        <li>Garage</li>
-                        <li>Luminosity</li>
-                        <li>Elem</li>
-                        <li>Elem</li>
+                        <li>Property Type: <span id="propertyType">Ask them!</span> </li>
+                        <li>Operation Type: <span id="operationType">Ask them!</span> </li>
+                        <li>Size: <span id="size">Ask them!</span> </li>
+                        <li>Garage: <span id="garage">Ask them!</span> </li>
+                        <li>Luminosity: <span id="light">Ask them!</span> </li>
+                        <li>Air Conditioning: <span id="AC">Ask them!</span> </li>
+                        <!-- <li>Elem: <span id="id">Ask them!</span> </li> -->
                     </ul>
                 </div>
             </section>
@@ -150,19 +135,15 @@
                 <div class="subtitlebox">
                     <h2>Amenities</h2>
                 </div>
-                <div class="column">
-                    <ul>
-                        <li>Elem</li>
-                        <li>Elem</li>
-                        <li>Elem</li>
+                <div class="column" >
+                    <ul id="column1">
+                        <!-- <li>Elem</li> -->
                     </ul>
                 </div>
 
-                <div class="column">
-                    <ul>
-                        <li>Elem</li>
-                        <li>Elem</li>
-                        <li>Elem</li>
+                <div class="column" >
+                    <ul id="column2">
+                        <!-- <li>Elem</li> -->
                     </ul>
                 </div>
             </section>
@@ -171,7 +152,7 @@
                 <div class="subtitlebox">
                     <h2>Description</h2>
                 </div>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ipsum, quis. Dolor dignissimos veritatis soluta, ducimus excepturi incidunt. Ullam distinctio fugit, accusantium nihil voluptate necessitatibus, nam eos consequuntur aut omnis inventore.</p>
+                <p id="description"></p>
             </section>
 
         </div>
@@ -182,9 +163,8 @@
         crossorigin="anonymous"></script>
 
         <script src="js/dynamicslider.js"></script>
+        <script src="js/postinfo.js"></script>
  
-
-        <!-- <script src="js/postdynamicload.js"></script> -->
 
     </body>
 
