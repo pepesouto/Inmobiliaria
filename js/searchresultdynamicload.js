@@ -13,11 +13,16 @@ $(document).ready(function(){
     params = {"zoneId": zone, "operationType":operationId, "propertyType": typeId};
     Object.keys(params).forEach(key => url.searchParams.append(key, params[key]))
 
+    
     fetch(url)
     .then(function(response) {
       return response.json();
     })
     .then(function(myJson) {
+      
+      $("#propertyType").text(typeId);
+      $("#operationType").html(operationId);
+      $("#zoneId").html(zone);
 
       var container = document.getElementById('resultbox');
 
