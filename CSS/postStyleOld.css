@@ -72,18 +72,17 @@
   align-items: center;
 
 
-  height: 500px;
+  height: 600px;
   width: 100%;
-  padding: 0 2%;
+  padding: 0 3%;
   background: #f2f2f2;
   box-sizing: border-box;
-
 }
 
 .box .imgbox {
-  margin: 0 2% 0 0;
-  /* margin: 20px 0; */
-  width: 65%;
+
+  margin: 20px 0;
+  width: 60%;
   height: 90%;
   object-fit: contain;
   box-sizing: border-box;
@@ -98,14 +97,13 @@
 
 .box .contactbox {
 
-
+  
   display: flex;
   flex-direction: column;
   justify-content: center;
-
-  width: 25%;
-  height: 70%;
-  /* margin: 7.5% 0; */
+  width: 20%;
+  height: auto;
+  margin: 7.5% 0;
   padding: 1%;
   object-fit: contain;
   box-sizing: border-box;
@@ -113,7 +111,6 @@
   border: 1px #f0f0f0 solid;
   font-family: tahoma;
   text-align: center;
-
 }
 
 .box .contactbox h2, h4 {
@@ -122,12 +119,12 @@
 }
 
 .box .contactbox h2 {
-  font-size: 100%;
+  font-size: 13px;
   font-weight: bold;
 }
 
 .box .contactbox h4 {
-  font-size: 100%;
+  font-size: 12px;
 }
 
 .box .contactbox form {
@@ -152,10 +149,6 @@
   font-size: 14px;
 }
 
-.box .contactbox button {
-  margin: 5% 0;
-}
-
 .infobox {
   padding-top :10px;
   box-sizing: border-box;
@@ -174,7 +167,7 @@
 
 .infobox .mainInfo, .datasheet, .amenities, .description {
   width: 60%;
-  margin: 2%;
+  margin: 2%; 
   box-sizing:border-box;
 }
 
@@ -188,10 +181,10 @@
 
 .infobox .mainInfo ul {
   width: 80%;
-  height: 30px;
+  height: 30px;               
   display: inline-flex;
   flex-flow: row nowrap;
-  justify-content: space-between;
+  justify-content: space-between; 
   align-items: center;
 
 }
@@ -199,9 +192,9 @@
 .infobox .mainInfo ul li {
   background: #ff003b;
   text-align: center;
-  width: 30px;
-  height: 30px;
-  line-height: 30px;
+  width: 30px;           
+  height: 30px;         
+  line-height: 30px;  
   border-radius: 50%;
   color: whitesmoke;
 }
@@ -245,15 +238,13 @@
   text-align: justify;
 }
 
-/* .infobox span{
-   color: red; 
-} */
+
 
 @media screen and (max-width: 800px) {
 	.innerHeader2 .socialMedia{
 		display: none;
   }
-
+  
   .box{
     flex-flow: column nowrap;
     justify-content: space-between;
@@ -263,19 +254,20 @@
   }
 
   .box .imgbox{
-    width: 80%;
-
-    height: 15%;
+    width: 90%;
+    
+    height: 30%;
     margin: 0;
     margin-bottom: 3%;
+    
 
 
   }
 
   .box .imgbox .mySlides{
     height: 300px;
-
-
+    
+    
   }
   .box .contactbox{
     width: 60%;
@@ -298,16 +290,16 @@
 
 
 @media screen and (max-width: 400px) {
-
+  
   .box .imgbox .mySlides{
     height: 200px;
   }
   .row .columnCarousel {
     height: 50px;
   }
-
+  
   .box .imgbox .caption-container {
     font-size: 12px;
   }
 
-}
+}  

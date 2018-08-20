@@ -10,39 +10,36 @@
 }
 
 .container {
-  display: flex;  
+  display: flex;
   flex-flow: row wrap;
-
   position: relative;
   padding: 2%;
   box-sizing: border-box;
   height: 600px;
+  justify-content: space-around;
 }
 
 .container .resultsbox {
   display: flex;
   flex-flow: row wrap;
-
+  overflow-y: scroll;
   width: 50%;
   box-sizing: border-box;
-
   height: 100%;
-  overflow: auto;
-
-
 }
 
 .container .resultsbox .result {
   margin: 1% 0;
   height: 150px;
   width: 100%;
-  background:#eee;
-  border-radius: 5px;
-  font-family: tahoma;
+  background: rgb(251, 251, 251);
+  border-top: #f1f1f1 1px solid;
+  border-bottom: #f1f1f1 1px solid;
+  font-family: arial;
   padding: 2%;
 
   display: flex;
-  flex-flow: row nowrap;  
+  flex-flow: row nowrap;
   align-items: center;
   justify-content: center;
 }
@@ -72,41 +69,44 @@
 
   padding: 3%;
   padding-top: 0;
-    
+
 }
 
 
-.container .resultsbox .result .description h3{
-  font-size: 12px;
+.container .resultsbox .result .description a{   /*h3 to a*/
+  font-size: 16px;
   font-weight: bold;
-  color: red;
+  color: rgb(89, 89, 89);
+  line-height: 1;
   text-transform: capitalize;
   flex-direction: initial;
-}  
+  text-decoration: none;
+}
 
 
 .container .resultsbox .result .description h2{
-  font-size: 16px;
-  font-weight: bold;
-}  
+  font-size: 14px;
+  color: grey;
+}
 
 .container .resultsbox .result .description p{
-  font-size: 14px;
-}  
+  font-size: 12px;
+  color: rgb(89, 89, 89);
+  line-height: 1;
+}
 
 .container .mapbox {
-  float: right;
-  padding: 0.5%;
-  width: 50%;
+  margin: 0.5%;
+  width: 46%;
   height: 450px;
   box-sizing: border-box;
 }
 
-.container .mapbox iframe {
+/* .container .mapbox iframe {
   object-fit: fill;
   height: 100%;
   width:100%;
-}
+} */
 
 @media screen and (max-width: 800px) {
 	.container .mapbox{
@@ -129,43 +129,43 @@
 
   .container .resultsbox .result .imgbox {
     width: 40%;
-  }  
+  }
   .container .resultsbox .result .description {
     align-items: flex-start;
     line-height: 1.5em;
     width: 60%;
-  }  
+  }
   .container .resultsbox .result .description h3{
     font-size: 10px;
   }
   .container .resultsbox .result .description h2{
     font-size: 12px;
-  }  
-  
+  }
+
   .container .resultsbox .result .description p{
     font-size: 11px;
-  }  
+  }
 }
 
 
 
 @media screen and (max-width: 450px) {
-  
+
   .container .resultsbox{
    flex-flow: column nowrap;
    align-items : center;
   }
-  
+
   .container .resultsbox .result{
     width: 90%;
   }
-  
+
   .container .resultsbox .result .description {
-    padding: 5%;     
+    padding: 5%;
     line-height: 1em;
   }
   .container .resultsbox .result .imgbox {
     height: 98%;
-    
+
   }
 }

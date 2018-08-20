@@ -2,6 +2,8 @@
 <html>
     <head>
         <title>Cabildo 500</title>
+        
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="CSS/reset.css">
         <link rel="stylesheet" href="CSS/headerstyle.css">
         <link rel="stylesheet" type="text/css" href="CSS/coverStyle.css">
@@ -33,28 +35,28 @@
             </section>
 
             <section class="content">
-              <div class="bar">
+              <form class="bar" method = "get" action="search-result.html">
                   <div class="innerbox">
-                    <select class="operation">
-                            <option value="venta">Venta</option>
-                            <option value="alquiler">Alquiler</option>
-                            <option value="alquilerTemporal">Alquiler Temporal</option>
+                    <select class="operation" name="operationType" id="operationId">
+                            <option value="Sale">Venta</option>
+                            <option value="Rent">Alquiler</option>
+                            <option value="Temporary">Alquiler Temporal</option>
                     </select>
 
-                    <select class="property">
-                            <option value="casas">Casas</option>
-                            <option value="aprtamentos">Apartamentos</option>
-                            <option value="terrenos">Terrenos</option>
+                    <select class="property" name="propertyType" id="typeId">
+                            <option value="House">Casas</option>
+                            <option value="Apartment">Apartamentos</option>
+                            <option value="Land">Terrenos</option>
                             <option value="locales">Locales Comerciales</option>
                             <option value="oficinas">Oficinas</option>
                     </select>
                   </div>
 
-                  <input class="ubication" type="text" name="ubication" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
+                  <input class="ubication" id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
 
-                  <button class="btn">Buscar</button>
+                  <button class="btn" id="buscar">Buscar</button>
 
-              </div>
+              </form>
             </section>
         </article>
 
@@ -66,46 +68,7 @@
             </div>
           </header>
 
-          <div id="recommendedbox" class="recommendedbox">
-
-                <!-- <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                    <div class="recommendedproperty">
-                        <img src="img/beach.jpg" alt="Recomended Property">
-                    </div>
-                </div> -->
-
-
-          </div>
+          <div id="recommendedbox" class="recommendedbox"></div>
         </section>
 
         <footer id="footer">
