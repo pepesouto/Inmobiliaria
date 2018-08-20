@@ -3,12 +3,13 @@
 		"id": 1,
 		"owner":[{"name": "Diego Perez","phone":"099 999 123"}],
 		"name":"Ideal estudiante! Proximo universidades",
-		"images": [ "https://a0.muscache.com/im/pictures/258a538c-dc50-4a1c-9942-697e47382750.jpg?aki_policy=xx_large",
-								 "https://a0.muscache.com/im/pictures/a763c91a-d3f4-409d-ae0f-1c3f6738aef8.jpg?aki_policy=x_large",
-								 "https://a0.muscache.com/im/pictures/8a8514f0-c2a8-416a-b1eb-eb9a872383e7.jpg?aki_policy=x_large",
-								 "https://a0.muscache.com/im/pictures/3bbdded5-90df-4c25-ac86-9ed806ee6d23.jpg?aki_policy=x_large",
-								 "https://a0.muscache.com/im/pictures/15d05c2f-8690-4b3d-86fa-5dbfd71388f9.jpg?aki_policy=x_large",
-								  "https://a0.muscache.com/im/pictures/a1ae5924-6c60-4c7d-ad87-782d20b8bf23.jpg?aki_policy=x_large"] ,
+		"images": [ "https://a0.muscache.com/im/pictures/bd7e25cc-9fad-4091-ba7b-83c8e111d9ac.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/29591302/31fa1b8f_original.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/29591382/66756d0f_original.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/29591354/c54e9f58_original.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/29591205/c64f9573_original.jpg?aki_policy=x_large",
+								  "https://a0.muscache.com/im/pictures/29591441/fadee890_original.jpg?aki_policy=x_large",
+									"https://a0.muscache.com/im/pictures/29591392/9e62890c_original.jpg?aki_policy=x_large"] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Rent",
@@ -76,7 +77,7 @@
 	},
 
 	{
-		"id": "PRUEBA",
+		"id": 6,
 		"owner":[{"name": "Diego Bellora","phone":"098 333 222"}],
 		"name":"Amplio apartamento ubicado sobre avenida! Proximo Tres Cruces",
 		"images":  [ "https://a0.muscache.com/im/pictures/55285884-7a64-4960-9dcf-e147ccb78d71.jpg?aki_policy=xx_large",
@@ -106,8 +107,14 @@
 		"id": 4,
 		"owner":[{"name": "Camila Spinelli","phone":"096 567 987"}],
 		"name":"Excelente penthouse Parque Rodo!",
-		"images":  [ "img/destacados/7.jpg",
-		             "img/destacados/8.jpg" ] ,
+		"images":  [ "https://a0.muscache.com/im/pictures/38c4bd52-8292-4c4a-bf50-dbcd199a2243.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/b9b66371-9901-425f-8c8e-d6281d4a0de7.jpg?aki_policy=xx_large",
+								 "https://a0.muscache.com/im/pictures/411a9c37-173d-4670-a0e2-6626861604a8.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/8ba4ce8d-5b3c-4b7b-a025-c52f62203aa8.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/c952a326-fa27-436b-bd9e-ec9414fe16b5.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/3dc75fd7-3b96-437d-a73b-f673410a76c7.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/9ae32302-c344-4550-9cb6-7ac76d1eb21f.jpg?aki_policy=x_large",
+		             "https://a0.muscache.com/im/pictures/a709eac2-346f-4b09-a0be-78db6c1b781c.jpg?aki_policy=x_large" ] ,
 		"zoneId": 1,
 		"propertyType": "Apartment",
 		"operationType": "Sale",
@@ -129,7 +136,7 @@
 		"id": 5,
 		"owner":[{"name": "Felipe Facio","phone":"098 345 123"}],
 		"name":"Cómodo apartamento en el corazón de Pocitos",
-		"images":  [ "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large", 
+		"images":  [ "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large",
 								"https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large",
 								"https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large",
 								"https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large",
@@ -164,56 +171,80 @@
 		"zoneId": "carrasco",
 		"propertyType": "Apartment",
 		"operationType": "Rent",
-		"details": [ { "size" : "150mtr2"} ], 
+		"details": [ { "size" : "150mtr2"} ],
 		"place" : { "lat":-34.884034, "lng": -56.048454},
 		"address": "General Narino 1667",
-		"isHighlight": true,
+		"isHighlight": false,
 		"bathroom":3,
 		"garage":"Yes",
 		"AC":"Yes",
 		"bedroom":3,
 		"description":"Excelente apartamento en carrasco, 2 dormitorios y 2 baños completos. Living y comedor, cocina completa. Piscina cubierta y descubierta, jacuzzi y barbacoas en Piso 18. ",
 		"amenities":[["Elevator","Wifi","Kitchen"],["Pool","Gym","Jacuzzi"]]
+	},
+
+	{
+		"id": 7,
+		"owner":[{"name": "Fer y Pepe","phone":"099 066 999"}],
+		"name":"Monoambiente no tan espacioso",
+		 "images": [ "https://a0.muscache.com/im/pictures/8daec404-5fbc-40fa-997f-322eb45adb06.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/4755a6eb-a6e1-4b23-928f-036755b9d4cd.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/f56b8fde-9070-4c66-bbd7-af92f2836c56.jpg?aki_policy=x_large",
+								 "https://a0.muscache.com/im/pictures/a90a0e98-b5fd-452b-9d83-8b4087304815.jpg?aki_policy=x_large",
+								  "https://a0.muscache.com/im/pictures/ed667315-871b-453d-8e38-e245134bc586.jpg?aki_policy=x_large"] ,
+		"zoneId": "Pocitos",
+		"propertyType": "Apartment",
+		"operationType": "Rent",
+		"details": [ { "size" : "30mtr2"} ],
+		"place" : { "lat":-34.909752, "lng": -56.156742},
+		"address": "Libertad 2649",
+		"isHighlight": true,
+		"bathroom":1,
+		"garage":"Yes",
+		"AC":"Yes",
+		"bedroom":3,
+		"description":" Hermoso monoambiente, en excelente ubicacion proxima a la casa de Felipe Facio! QUE ESTA ESPERANDO? no se lo pierda! ",
+		"amenities":[["Elevator","Wifi","Kitchen"],["Pool","Gym","Jacuzzi"]]
 	}
 ],
 
 "postImages": [
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large",
 		"onclick":	"currentSlide(1)",
 		"alt": "1st photo"
-		
+
 	},
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large",
 		"onclick":	"currentSlide(2)",
 		"alt": "2nd photo"
-		
+
 	},
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large",
 		"onclick":	"currentSlide(3)",
 		"alt": "3rd photo"
-		
+
 	},
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large",
 		"onclick":	"currentSlide(4)",
 		"alt": "4th photo"
-		
+
 	},
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large",
 		"onclick":	"currentSlide(5)",
 		"alt": "5th photo"
-		
+
 	},
 	{
-		"images": "https://a0.muscache.com/im/pictures/92886773/38e6946a_original.jpg?aki_policy=x_large", 			
+		"images": "https://a0.muscache.com/im/pictures/92886773/38e6946a_original.jpg?aki_policy=x_large",
 		"onclick":	"currentSlide(6)",
 		"alt": "6th photo"
-		
+
 	}
-	
+
 ]
 }

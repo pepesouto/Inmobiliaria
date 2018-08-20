@@ -18,8 +18,19 @@ $(document).ready(function(){
       return response.json();
     })
     .then(function(myJson) {
-      console.log(myJson);
+
       var container = document.getElementById('resultbox');
+
+      var elem = myJson[0];
+      var map = document.getElementById("map");
+      if(map){
+        var mapOptions = {
+          zoom: 14,
+          center: new google.maps.LatLng(elem.place.lat, elem.place.lng)
+        }
+        var map = new google.maps.Map(map, mapOptions);
+      }
+
       myJson.forEach(function(element) {
         var img = document.createElement('img');
         var theDiv = document.createElement('div');
@@ -39,7 +50,7 @@ $(document).ready(function(){
         $(descrProp).html(element.address);
         var descrtext = document.createElement('p');
         $(descrtext).addClass("text");
-        $(descrtext).html(element.details[0].size);
+        $(descrtext).html(element.description);
 
         $(divDescription).append(descrProp);
         $(divDescription).append(descrtext);
@@ -56,15 +67,7 @@ $(document).ready(function(){
         container.appendChild(theSect);
 
 
-        var map = document.getElementById("map");
         if(map){
-          var mapOptions = {
-            zoom: 14,
-            center: new google.maps.LatLng(element.place.lat, element.place.lng),
-            scrollwheel: false
-          }
-          new google.maps.Map(map, mapOptions);
-          var map = new google.maps.Map(document.getElementById("map"), mapOptions);
           var marker = new google.maps.Marker({
             position: new google.maps.LatLng(element.place.lat, element.place.lng),
             map: map

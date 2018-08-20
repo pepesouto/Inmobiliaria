@@ -128,8 +128,8 @@
   display: flex;
   flex-flow: row wrap;
   align-content: space-around;
-  justify-content: space-around; 
-  
+  justify-content: space-around;
+
   width: 100%;
   height: 100%;
 }
@@ -149,8 +149,8 @@
 .recommendationbox .recommendedbox .recommendedproperty{
   margin: .5%;
   width: 30%;
-  height: 30%; 
-  overflow:hidden;
+  height: 30%;
+  overflow: hidden;
 }
 
 .recommendationbox .recommendedbox .recommendedproperty img{

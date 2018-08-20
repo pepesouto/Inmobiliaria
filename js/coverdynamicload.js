@@ -12,7 +12,13 @@ $(document).ready(function(){
       var img = document.createElement('img');
       var theDiv = document.createElement('div');
       $(theDiv).addClass("recommendedproperty");
-      $(theDiv).prepend(img);
+
+      var aux = document.createElement('a');
+      var link = "post.html?id=" + element.id;
+      $(aux).attr("href", link);
+      $(aux).append(img);
+      $(theDiv).prepend(aux);
+      
       img.src = element.images[0];
       docFrag.appendChild(theDiv);
   });
