@@ -60,7 +60,7 @@
 }
 
 #header ul a {
-	font-family: tahoma;
+	font-family: tahoma,Arial, Helvetica;
 	letter-spacing:.1em;
 	color: grey;
 	text-decoration: none;

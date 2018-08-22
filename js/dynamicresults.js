@@ -27,6 +27,7 @@ $(document).ready(function(){
       container.appendChild(theSection);
       // docFrag.appendChild(theDivImg);
       // docFrag.appendChild(theDivDes);
+
     });
 
 

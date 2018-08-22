@@ -10,7 +10,7 @@
   top: 12px;
   color: white;
   font-size: 16px;
-  font-family: tahoma;
+  font-family: tahoma,Arial, Helvetica;
   text-align: center;
 }
 
@@ -32,7 +32,7 @@
 .innerHeader2 .location h4 {
   color: #737373;
   font-size: 16px;
-  font-family: tahoma;
+  font-family: tahoma,Arial, Helvetica;
   display: inline;
 }
 
@@ -111,7 +111,7 @@
   box-sizing: border-box;
   background-color: white;
   border: 1px #f0f0f0 solid;
-  font-family: tahoma;
+  font-family: tahoma,Arial, Helvetica;
   text-align: center;
 
 }
@@ -161,7 +161,7 @@
   box-sizing: border-box;
   width: 60%;
   color: grey;
-  font-family: tahoma;
+  font-family: tahoma,Arial, Helvetica;
   font-size: 13px;
   line-height: 1.5em;
 
@@ -213,7 +213,7 @@
   width: 100%;
   color: #000;
   font-size: 12px;
-  font-family: tahoma;
+  font-family: tahoma,Arial, Helvetica;
   font-weight: bold;
   border-bottom: #a6a6a6 1px solid;
   /*margin-bottom: 2%;*/
