@@ -1,0 +1,75 @@
+.browserbox {
+  width: 100%;
+  height: 40px;
+	background: #f4f4f4;
+}
+
+.browserbox .browser {
+  margin-top: 9px;
+  margin-left: 2%;
+}
+
+.innerHeader {
+  width: 100%;
+  height: 40px;
+  padding: 10px 20px;
+  font-family: Tahoma,Arial, Helvetica;
+  font-size: 13px;
+}
+
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  position: relative;
+  padding: 2%;
+  box-sizing: border-box;
+  height: 600px;
+  justify-content: space-around;
+}
+
+.container .resultsbox {
+  display: flex;
+  flex-flow: row wrap;
+  overflow-y: scroll;
+  width: 50%;
+  box-sizing: border-box;
+  height: 100%;
+}
+
+
+.container .mapbox {
+  margin: 0.5%;
+  width: 46%;
+  height: 450px;
+  box-sizing: border-box;
+
+  background: #ccc; 
+}
+
+
+@media screen and (max-width: 800px) {
+	.container .mapbox{
+		display: none;
+  }
+  .container .resultsbox{
+    width: 100%;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-content: flex-start;
+
+
+    height: auto;
+    overflow: visible;
+
+  }
+}
+
+
+@media screen and (max-width: 450px) {
+
+  .container .resultsbox{
+   flex-flow: column nowrap;
+   align-items : center;
+  }
+
+}

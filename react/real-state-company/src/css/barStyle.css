@@ -1,0 +1,72 @@
+
+.bar{
+  height: 100%;
+  width: 100%;
+  /* position: absolute; */
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 10px;
+  padding:1%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.bar .innerbox {
+  width: 50%;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bar .ubication, .btn{
+  margin: .5%;
+  height: 90%;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.bar .innerbox .operation, .property {
+  width: 49.5%;
+  height: 100%;
+}
+
+
+.bar select, input {
+  font-size: 13px;
+  font-family: Tahoma,Arial, Helvetica;
+  color: grey;
+
+}
+
+.bar .ubication {
+  width: 40%;
+  height: 100%;
+}
+
+.bar .btn {
+  background: orange;
+  border: orange solid;
+  padding: 0.25% 2%;
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.operation, .property, .btn{
+  padding: 1%;
+}
+
+.ubication{
+  padding: 0.5%;
+}
+
+
+
+@media screen and (max-width: 768px) {
+
+  .bar  { flex-flow: column nowrap; padding: 2%; }
+  .bar .innerbox, .bar .ubication, .btn { width: 100%;}
+
+}

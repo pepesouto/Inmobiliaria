@@ -206,45 +206,5 @@
 		"description":" Hermoso monoambiente, en excelente ubicacion proxima a la casa de Felipe Facio! QUE ESTA ESPERANDO? no se lo pierda! ",
 		"amenities":[["Elevator","Wifi","Kitchen"],["Pool","Gym","Jacuzzi"]]
 	}
-],
-
-"postImages": [
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886112/14078555_original.jpg?aki_policy=xx_large",
-		"onclick":	"currentSlide(1)",
-		"alt": "1st photo"
-
-	},
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886178/c679cd6d_original.jpg?aki_policy=x_large",
-		"onclick":	"currentSlide(2)",
-		"alt": "2nd photo"
-
-	},
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886288/52ed5803_original.jpg?aki_policy=x_large",
-		"onclick":	"currentSlide(3)",
-		"alt": "3rd photo"
-
-	},
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886469/8ffc7d33_original.jpg?aki_policy=x_large",
-		"onclick":	"currentSlide(4)",
-		"alt": "4th photo"
-
-	},
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886523/c1c9a02e_original.jpg?aki_policy=x_large",
-		"onclick":	"currentSlide(5)",
-		"alt": "5th photo"
-
-	},
-	{
-		"images": "https://a0.muscache.com/im/pictures/92886773/38e6946a_original.jpg?aki_policy=x_large",
-		"onclick":	"currentSlide(6)",
-		"alt": "6th photo"
-
-	}
-
 ]
 }

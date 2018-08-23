@@ -3,7 +3,7 @@ body{
   width: 100%;
 }
 .box{
-  background-image: url(../img/img.jpg);
+  background-image: url(../images/img.jpg);
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -108,7 +108,7 @@ body{
 
 .recommendationbox .recommendationHeader{
   width: 100%;
-  background-image: url(../img/mapimg.png);
+  background-image: url(../images/mapimg.png);
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: 3%;
