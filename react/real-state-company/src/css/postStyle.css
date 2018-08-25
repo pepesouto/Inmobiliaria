@@ -70,7 +70,7 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
+  flex-flow: row nowrap;
 
   height: 500px;
   width: 100%;
@@ -169,11 +169,10 @@
   flex-flow: column nowrap;
   align-items: center;
 
-
 }
 
 .infobox .mainInfo, .datasheet, .amenities, .description {
-  width: 60%;
+  width: 70%;
   margin: 2%;
   box-sizing:border-box;
 }
@@ -221,6 +220,10 @@
 
 .infobox .datasheet {
   object-fit: contain;
+}
+
+.infobox .datasheet .columns{
+  display:flex;
 }
 
 .infobox .column {
