@@ -40,6 +40,7 @@ class App extends Component {
         <HeaderComponent/>
         <Switch>
           <Route exact path='/' component={Main}/>
+
         </Switch>
         <FooterComponent/>
       </div>

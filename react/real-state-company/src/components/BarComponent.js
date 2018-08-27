@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
-import "../css/barStyle.css"
+import "../css/barStyle.css";
+import SearchButton from './SearchButton';
 
+<<<<<<< HEAD
 class BarComponent extends Component{
   render(){
     return(
@@ -9,13 +11,51 @@ class BarComponent extends Component{
           <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
         </section>
         <form className="bar" method = "get" action="search-result.html">
+=======
+class BarComponent extends Component {
+  constructor(props){
+    super(props)
+    this.state={
+      operationType: "Sale",
+      propertyType: "House",
+      zoneId: ""
+    }
+  }
+
+  changeOperation = (event) => {
+    this.setState({
+      operationType: event.target.value
+    })
+  }
+  changeProperty = (event) => {
+    this.setState({
+      propertyType: event.target.value
+    })
+  }
+  changeZone = (event) => {
+    this.setState({
+      zoneId: event.target.value
+    })
+  }
+  
+
+  render() {
+    return (
+      <section className="content">
+        <form className="bar" method="get" action="search-result.html">
+>>>>>>> edfcf153c34ff95a9970cf828beaa402ca4e6c86
           <div className="innerbox">
-            <select className="operation" name="operationType" id="operationId">
+            <select className="operation" value={this.state.operationType} onChange={this.changeOperation} name="operationType" id="operationId">
               <option value="Sale">Venta</option>
               <option value="Rent">Alquiler</option>
               <option value="Temporary">Alquiler Temporal</option>
             </select>
+<<<<<<< HEAD
             <select className="property" name="propertyType" id="typeId">
+=======
+
+            <select className="property" value={this.state.propertyType} onChange={this.changeProperty} name="propertyType" id="typeId">
+>>>>>>> edfcf153c34ff95a9970cf828beaa402ca4e6c86
               <option value="House">Casas</option>
               <option value="Apartment">Apartamentos</option>
               <option value="Land">Terrenos</option>
@@ -23,7 +63,13 @@ class BarComponent extends Component{
               <option value="oficinas">Oficinas</option>
             </select>
           </div>
+<<<<<<< HEAD
           <input className="ubication" id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
+=======
+
+          <input className="ubication" value={this.state.zoneId} onChange={this.changeZone} id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo" />
+
+>>>>>>> edfcf153c34ff95a9970cf828beaa402ca4e6c86
           <button className="btn" id="buscar">Buscar</button>
         </form>
       </article>
