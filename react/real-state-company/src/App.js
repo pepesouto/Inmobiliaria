@@ -7,7 +7,6 @@ import FooterComponent from "./components/FooterComponent";
 // ------COVER
 import BarComponent from "./components/BarComponent";
 import RecommendationComponent from "./components/RecommendationComponent";
-
 // ------COVER
 
 // -----RESULTS
@@ -36,20 +35,21 @@ import "./css/coverStyle.css";
 // -----POST
 
 class App extends Component {
+  
   render() {
     return (
 
 // -----COVER
       <div className="App">
-        <HeaderComponent></HeaderComponent>
+        <HeaderComponent/>
         <article className="box">
           <section className="slogan">
               <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
           </section>        
-          <BarComponent></BarComponent>
+          <BarComponent/>
         </article>
-        <RecommendationComponent></RecommendationComponent>     
-        <FooterComponent></FooterComponent>
+        <RecommendationComponent/>     
+        <FooterComponent/>
       </div>
 // -----COVER
 
