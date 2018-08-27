@@ -34,7 +34,7 @@ class BarComponent extends Component {
         <section className="slogan">
           <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
         </section>
-        <form className="bar" method="get" action="search-result.html">
+        <form className="bar">
           <div className="innerbox">
             <select className="operation" value={this.state.operationType} onChange={this.changeOperation} name="operationType" id="operationId">
               <option value="Sale">Venta</option>
@@ -50,7 +50,7 @@ class BarComponent extends Component {
             </select>
           </div>
           <input className="ubication" value={this.state.zoneId} onChange={this.changeZone} id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo" />
-          <button className="btn" id="buscar">Buscar</button>
+          <Link to="/search-result" params ={{this.props.location.search}}><button className="btn" id="buscar">Buscar</button></Link>
         </form>
       </article>
     )
