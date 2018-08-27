@@ -6,11 +6,8 @@
     "history": "^4.7.2",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-<<<<<<< HEAD
     "react-router-dom": "^4.3.1",
-=======
     "react-router": "^4.3.1",
->>>>>>> edfcf153c34ff95a9970cf828beaa402ca4e6c86
     "react-scripts": "1.1.4"
   },
   "scripts": {
