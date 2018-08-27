@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
-import "../css/barStyle.css";
-import SearchButton from './SearchButton';
+import {Link} from "react-dom";
+import { Switch, Router } from 'react-router-dom';
+import "./../css/barStyle.css";
 
 class BarComponent extends Component {
   constructor(props){
@@ -28,9 +29,14 @@ class BarComponent extends Component {
     })
   }
 
+  componentDidMount(){
+    console.log(this.state);
+  }
+
+
   render() {
     return (
-      <article className="box">
+      <article className="mainbox">
         <section className="slogan">
           <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
         </section>
@@ -50,7 +56,8 @@ class BarComponent extends Component {
             </select>
           </div>
           <input className="ubication" value={this.state.zoneId} onChange={this.changeZone} id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo" />
-          <Link to="/search-result" params ={{this.props.location.search}}><button className="btn" id="buscar">Buscar</button></Link>
+
+          <button className="btn" id="buscar">Buscar</button>
         </form>
       </article>
     )
@@ -58,3 +65,8 @@ class BarComponent extends Component {
 }
 
 export default BarComponent;
+
+// Link to="/search-result" props
+// this.state.operationType,
+// this.state.propertyType,
+// this.state.zoneId

@@ -1,8 +1,9 @@
-import React from 'react';
+import React, {Component} from 'react';
 import { Switch, Route } from 'react-router-dom';
 
-import "./css/search-result.css";
-import RecordComponent from './components/RecordComponent';
+import "../css/search-result.css";
+import RecordComponent from './RecordComponent';
+import SearchResultBoxComponent from './SearchResultBoxComponent';
 
 
 class SearchResult extends Component{

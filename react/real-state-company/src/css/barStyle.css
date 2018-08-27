@@ -3,7 +3,7 @@ body{
   width: 100%;
 }
 
-.box{
+.mainbox{
   background-image: url(../images/img.jpg);
   background-position: center;
   background-size: cover;
@@ -12,16 +12,16 @@ body{
   height: 100%;
   display: flex;
   flex-direction: column;
-  /*align-items: center;*/
+  align-items: center;
 }
 
-.slogan{
+.mainbox .slogan{
   width: 45%;
   margin-top: 10%;
   margin-bottom: 3%;
 }
 
-.slogan h1 {
+.mainbox .slogan h1 {
   color: white;
   padding: 1%;
   text-align: center;
@@ -37,7 +37,7 @@ body{
   margin-bottom: 12%;
 } */
 
-.bar {
+.mainbox .bar {
   height: 100%;
   width: 70%;
   background-color: rgba(0,0,0, 0.7);
@@ -50,38 +50,38 @@ body{
   margin-bottom: 12%;
 }
 
-.bar .innerbox {
-  width: 50%;
+.mainbox .bar .innerbox {
+  width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.bar .ubication, .btn{
+.mainbox .bar .ubication, .btn{
   /*margin: .5%;*/
   height: 50px;
   box-sizing: border-box;
   cursor: pointer;
 }
 
-.bar .innerbox .operation, .property {
+.mainbox .bar .innerbox .operation, .property {
   width: 49.5%;
   height: 50px;
 }
 
 
-.bar select, input {
+.mainbox .bar select, input {
   font-size: 13px;
   font-family: Tahoma, Arial, Helvetica;
   color: grey;
 }
 
-.bar .ubication {
-  width: 40%;
+.mainbox .bar .ubication {
+  width: 100%;
 }
 
-.bar .btn {
+.mainbox .bar .btn {
   background: orange;
   border: orange solid;
 /*  padding: 0.25% 2%;*/
