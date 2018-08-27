@@ -4,7 +4,10 @@ import "../css/barStyle.css"
 class BarComponent extends Component{
   render(){
     return(
-      <section className="content">
+      <article className="box">
+        <section className="slogan">
+          <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
+        </section>
         <form className="bar" method = "get" action="search-result.html">
           <div className="innerbox">
             <select className="operation" name="operationType" id="operationId">
@@ -12,7 +15,6 @@ class BarComponent extends Component{
               <option value="Rent">Alquiler</option>
               <option value="Temporary">Alquiler Temporal</option>
             </select>
-
             <select className="property" name="propertyType" id="typeId">
               <option value="House">Casas</option>
               <option value="Apartment">Apartamentos</option>
@@ -21,12 +23,10 @@ class BarComponent extends Component{
               <option value="oficinas">Oficinas</option>
             </select>
           </div>
-
           <input className="ubication" id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
-          
           <button className="btn" id="buscar">Buscar</button>
         </form>
-      </section>
+      </article>
     )
   }
 }

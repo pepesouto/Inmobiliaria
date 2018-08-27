@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import logo from "../images/logo.png";
 import "../css/headerstyle.css";
 
@@ -6,9 +7,7 @@ class HeaderComponent extends Component {
   render() {
     return(
       <header id="header">
-          <a className="logo" href="cover.html">
-            <img src={logo} alt="Cabildo 500"/>
-          </a>
+          <Link className="logo" to='/'><img src={logo} alt="Cabildo 500"/></Link>
           <nav className="navs">
             <ul className="opt1">
                 <li><a href="">VENTA</a></li>
