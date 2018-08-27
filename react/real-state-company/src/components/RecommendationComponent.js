@@ -44,7 +44,7 @@ class RecommendationComponent extends Component {
           <Prueba></Prueba>
         </header>
         <div id="recommendedbox" className="recommendedbox">
-        {this.crearImagenes()}
+          {this.crearImagenes()}
         </div>
       </section>
     )
