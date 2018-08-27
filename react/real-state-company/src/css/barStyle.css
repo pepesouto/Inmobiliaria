@@ -1,0 +1,108 @@
+body{
+  height: 100%;
+  width: 100%;
+}
+
+.mainbox{
+  background-image: url(../images/img.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width:100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mainbox .slogan{
+  width: 45%;
+  margin-top: 10%;
+  margin-bottom: 3%;
+}
+
+.mainbox .slogan h1 {
+  color: white;
+  padding: 1%;
+  text-align: center;
+  font-size: 40px;
+  font-family: helvetica;
+  text-shadow: 2px 2px 10px #000;
+}
+
+/* .content {
+  border: yellow dotted 2px;
+  height: 100%;
+  width: 70%;
+  margin-bottom: 12%;
+} */
+
+.mainbox .bar {
+  height: 100%;
+  width: 70%;
+  background-color: rgba(0,0,0, 0.7);
+  border-radius: 10px;
+  padding:.5%;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 12%;
+}
+
+.mainbox .bar .innerbox {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.mainbox .bar .ubication, .btn{
+  /*margin: .5%;*/
+  height: 50px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.mainbox .bar .innerbox .operation, .property {
+  width: 49.5%;
+  height: 50px;
+}
+
+
+.mainbox .bar select, input {
+  font-size: 13px;
+  font-family: Tahoma, Arial, Helvetica;
+  color: grey;
+}
+
+.mainbox .bar .ubication {
+  width: 100%;
+}
+
+.mainbox .bar .btn {
+  background: orange;
+  border: orange solid;
+/*  padding: 0.25% 2%;*/
+  color: white;
+  font-size: 18px;
+  text-align: center;
+}
+
+.operation, .property, .btn{
+  /*padding: 1%;*/
+}
+
+.ubication{
+  /*padding: 0.5%;*/
+}
+
+
+@media screen and (max-width: 768px) {
+  .slogan { width: 70%;}
+  .slogan h1 { font-size: 24px;}
+  /* .content { height: 30%; } */
+  .bar  { flex-flow: column nowrap; padding: 2%; }
+  .bar .innerbox, .bar .ubication, .btn { width: 100%;}
+}

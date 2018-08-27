@@ -9,16 +9,11 @@ body{
   background-repeat: no-repeat;
   width:100%;
   height: 100%;
-  /* height: 600px; */
-  /*background-position-y : -200px;  maybe not necessary with  background-position:center now*/
-  /*background-position-x : -50px;  to center de paintings */
 
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
-
 
 .slogan{
   width: 45%;
@@ -81,7 +76,7 @@ body{
   font-size: 13px;
   font-family: Tahoma,Arial, Helvetica;
   color: grey;
-  
+
 }
 
 .bar .ubication {
@@ -146,7 +141,6 @@ body{
   flex-flow: row wrap;
   align-content: space-around;
   justify-content: space-around;
-
   width: 100%;
   height: 100%;
 }
