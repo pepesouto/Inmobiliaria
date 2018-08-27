@@ -1,10 +1,25 @@
-import React from 'react'
-import { Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
+
+import "./css/search-result.css";
+import RecordComponent from './components/RecordComponent';
 
 
-const SearchResult = (properties) => (
-
-
-)
+class SearchResult extends Component{
+  render() {
+    return (
+      <div>
+        <nav className="browserbox">
+          <input className="browser" name="browser" type="text" placeholder="e.i New York City"/>
+        </nav>
+        <RecordComponent/>
+        <div className="container">
+          <SearchResultBoxComponent/>
+          <div className="mapbox" id="map"></div>
+        </div>
+      </div>
+    )
+  }
+}
 
 export default SearchResult
