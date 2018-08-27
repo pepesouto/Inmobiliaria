@@ -1,5 +1,7 @@
 import React, { Component } from 'react';
 import "../css/coverStyle.css";
+import Prueba from './Prueba';
+import RecommendedPropertyBox from './RecommendedPropertyBox';
 
 class RecommendationComponent extends Component {
   render(){
@@ -10,8 +12,9 @@ class RecommendationComponent extends Component {
             <h2 className="title"> ❤ </h2>
             <h2 className="title"> Busquedas Recomendadas </h2>
           </div>
+          <Prueba></Prueba>
         </header>
-        <div id="recommendedbox" className="recommendedbox"></div>
+        <RecommendedPropertyBox></RecommendedPropertyBox>
       </section>
     )
   }

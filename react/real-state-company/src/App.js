@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
+import ReactDOM from "react-dom";
+import { Router, Route, IndexRoute, hashHistory} from "react-router";
+
 import HeaderComponent from "./components/HeaderComponent";
 import FooterComponent from "./components/FooterComponent";
 // ------COVER
-// import BarComponent from "./components/BarComponent";
-// import RecommendationComponent from "./components/RecommendationComponent";
+import BarComponent from "./components/BarComponent";
+import RecommendationComponent from "./components/RecommendationComponent";
 
 // ------COVER
 
@@ -22,14 +25,14 @@ import "./css/coverStyle.css";
 
 
 // -----POST
-import SliderComponent from "./components/SliderComponent";
-import ContactComponent from "./components/ContactComponent";
-import InnerHeaderComponent from "./components/InnerHeaderComponent";
-import "./css/postStyle.css";
-import MainInfoComponent from './components/MainInfoComponent';
-import DataSheetComponent from './components/DataSheetComponent';
-import AmenitiesComponent from './components/AmenitiesComponent';
-import DescriptionComponent from './components/DescriptionComponent';
+// import SliderComponent from "./components/SliderComponent";
+// import ContactComponent from "./components/ContactComponent";
+// import InnerHeaderComponent from "./components/InnerHeaderComponent";
+// import "./css/postStyle.css";
+// import MainInfoComponent from './components/MainInfoComponent';
+// import DataSheetComponent from './components/DataSheetComponent';
+// import AmenitiesComponent from './components/AmenitiesComponent';
+// import DescriptionComponent from './components/DescriptionComponent';
 // -----POST
 
 class App extends Component {
@@ -37,17 +40,17 @@ class App extends Component {
     return (
 
 // -----COVER
-    //   <div className="App">
-    //     <HeaderComponent></HeaderComponent>
-    //     <article className="box">
-    //       <section className="slogan">
-    //           <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
-    //       </section>        
-    //       <BarComponent></BarComponent>
-    //     </article>
-    //     <RecommendationComponent></RecommendationComponent>     
-    //     <FooterComponent></FooterComponent>
-    //   </div>
+      <div className="App">
+        <HeaderComponent></HeaderComponent>
+        <article className="box">
+          <section className="slogan">
+              <h1>Alquiler y venta de apartamentos y casas en Uruguay</h1>
+          </section>        
+          <BarComponent></BarComponent>
+        </article>
+        <RecommendationComponent></RecommendationComponent>     
+        <FooterComponent></FooterComponent>
+      </div>
 // -----COVER
 
 // -----RESULTS
@@ -73,24 +76,24 @@ class App extends Component {
 // -----RESULTS
 
 // -----POST
-        <div>
-          <HeaderComponent></HeaderComponent>
-          <header className="innerHeader">
-                <h1 className="postTitle"id="postTitle">Post Title</h1>
-          </header>
-          <InnerHeaderComponent></InnerHeaderComponent>
-          <div  className="box">
-              <SliderComponent></SliderComponent>
-              <ContactComponent></ContactComponent>
-          </div> 
-          <div className="infobox">
-              <MainInfoComponent></MainInfoComponent>
-              <DataSheetComponent></DataSheetComponent>
-              <AmenitiesComponent></AmenitiesComponent>
-              <DescriptionComponent></DescriptionComponent>
-          </div>
-          <FooterComponent></FooterComponent>
-        </div>
+        // <div id="body">
+        //   <HeaderComponent></HeaderComponent>
+        //   <header className="innerHeader">
+        //         <h1 className="postTitle"id="postTitle">Post Title</h1>
+        //   </header>
+        //   <InnerHeaderComponent></InnerHeaderComponent>
+        //   <div  className="box">
+        //       <SliderComponent></SliderComponent>
+        //       <ContactComponent></ContactComponent>
+        //   </div> 
+        //   <div className="infobox">
+        //       <MainInfoComponent></MainInfoComponent>
+        //       <DataSheetComponent></DataSheetComponent>
+        //       <AmenitiesComponent></AmenitiesComponent>
+        //       <DescriptionComponent></DescriptionComponent>
+        //   </div>
+        //   <FooterComponent></FooterComponent>
+        // </div>
 // -----POST
 
     );

@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import "../css/barStyle.css"
+import "../css/barStyle.css";
+import SearchButton from './SearchButton';
 
 class BarComponent extends Component{
   render(){
@@ -24,7 +25,7 @@ class BarComponent extends Component{
 
           <input className="ubication" id="zoneId" type="text" name="zoneId" placeholder="Ubicacion ej: Pocitos, Montevideo"/>
           
-          <button className="btn" id="buscar">Buscar</button>
+          <SearchButton></SearchButton>
         </form>
       </section>
     )
